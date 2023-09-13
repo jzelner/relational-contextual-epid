@@ -1,0 +1,16 @@
+.DS_store
+.DS_Store
+*.Rdata
+_targets
+/.quarto/
+.vscode
+.Rproj.user
+docs
+*.Rproj
+.Rhistory
+# knitr and R markdown default cache diectories
+*_cache/
+/cache/
+_site
+/.luarc.json
+_book

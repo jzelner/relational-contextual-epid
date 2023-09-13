@@ -1,0 +1,43 @@
+---
+title: "Inspirations and Influences"
+format: html
+---
+
+# Inspirations and Influences
+
+What - if any - kind of book needs to be written in the realm of contextual  epidemiology? And why would I decide to write something like this? 
+
+## What is the problem to be solved? 
+
+There seems to be a hole in the literature on spatial epidemiology that comes to grips with the human aspects of risk. This is a particularly hard problem in infectious disease epidemiology, where the role and importance of context is increasingly understood, but it has an uneasy coexistence with the mainstream of the field. 
+
+In many ways, my goal in writing this is selfish, to satisfy a personal curiosity I suspect is of some greater import to at least a few people. Specifically: What does it mean to do *contextual* epidemiology? Is this a meaningless term that just appeals to the social and natural science centers of my brain, or is it tapping into something more meaningful?
+
+Part of my inspiration is a reaction to the technocratic impulse and imperative in modern epidemiology. In particular, I find myself a bit paralyzed by the worry about what happens when we operate under the assumption that escalating methodological complexity is an imperative and that the road out of socio-epidemiological problems is paved with technological solutions. 
+
+On the other side, simply put, I love the methodological tools of spatial epidemiology, Bayesian hierarchical analysis, and systems modeling. I have learned more than I ever could have hoped through these learning, tinkering with, and applying them to problems both in the real world and in my own head. But for me, the large majority of lessons learned have been from their conceptual isomorphisms (or conflicts) with the world as it appears to us through qualitative and quantitative data, rather than in their parameter values and predictions. 
+
+For me, this book is about resolving this cognitive dissonance while providing useful 'how-to' pointers along the way. I hope to articulate the affirmative case for a systems-based, contextually-sensitive, justice-oriented, morally and ethically opinionated, and theoretically driven approach to epidemiology. Along the way, I hope to show why the tools of such an approach are necessarily heterogeneous in nature and require us to accept uncertaintities quantitative and epistemic. 
+
+## What are the elements of contextual epidemiology?
+
+I arrived at the idea of contextual epidemiology from spatial and hierarchical analysis. The stereotypical challenge in this setting is to adjust away the impact of context to get at some more generally meaningful parameter estimate, e.g. a treatment effect. But another way of thinking about this is that the hard work is in characterizing not only the 'main' or fixed effects, but in capturing the drivers of variability in outcomes across locations.
+
+But not every contextual question is strictly spatial: If we care about how the structure of social networks impacts individual and collective risks, we are talking about context once again. In the network example, the context is one's network 'neighborhood', the collection of individuals one interacts with. In reasonably homogeneous networks, groups of individuals may share very similar or almost identitical network contexts. 
+
+Ultimately, the key element of context is *relatedness*: These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartitis we see today. Making sense of each of these 
+
+## Influences
+
+There are any number of books and papers out there that have articulated a similar perspective on the tools of quantitative analysis. The following have been particularly important for my own thinking and their influences will be felt throughout this work:
+
+- Statistical Rethinking [@mcelreath2020]
+
+- The Ecological Detective [@hilborn1997]
+
+- ARM/Regression and Other Stories [@gelman2020a]
+
+What makes these works so useful, strong, and enduring is the way that they articulate a coherent, opinionated perspective on the meaning and use of a set of methodological tools. On top of that, they are engaging and fun to read - the sort of thing you return to over time not just to get specific methodological tools, but to be exposed to their perspective. 
+
+
+## References
