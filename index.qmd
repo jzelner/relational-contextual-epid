@@ -1,6 +1,5 @@
 ---
 title: "Inspirations and Influences"
-format: html
 ---
 
 # Inspirations and Influences
@@ -25,7 +24,21 @@ I arrived at the idea of contextual epidemiology from spatial and hierarchical a
 
 But not every contextual question is strictly spatial: If we care about how the structure of social networks impacts individual and collective risks, we are talking about context once again. In the network example, the context is one's network 'neighborhood', the collection of individuals one interacts with. In reasonably homogeneous networks, groups of individuals may share very similar or almost identitical network contexts. 
 
-Ultimately, the key element of context is *relatedness*: These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartitis we see today. Making sense of each of these 
+Ultimately, the key element of context is *relatedness*: These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartities we see today.
+
+Making sense of the types of patterns we see in the real world requires us to first identify:
+
+1. A question we want or need to answer.
+2. The most important types of relationships impacting our outcome of interest (time, space, individual-to-individual).
+3. A methodological approach that will allow us to characterize the impact of those relationships on the outcome we care about. 
+
+It is important to note that the choice of method comes *last* here: A key motivation of this book is to sidestep the tendency to train ourselves into methodological hammers looking for data nails to whack away at. 
+
+In addition to this, there is no pre-supposition that the appropriate method is necessarily 'fancy' in the sense of being conceptually or mathematically complex, computationally intensive, or even primarily or at all quantitative in nature. Whether this is the case is entirely a function of what happens at the intersection between question, data, and theory. 
+
+## A book, not a cookbook
+
+> "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools." - Douglas Adams, Hitchhikers Guide to the Galaxy
 
 ## Influences
 
@@ -39,5 +52,4 @@ There are any number of books and papers out there that have articulated a simil
 
 What makes these works so useful, strong, and enduring is the way that they articulate a coherent, opinionated perspective on the meaning and use of a set of methodological tools. On top of that, they are engaging and fun to read - the sort of thing you return to over time not just to get specific methodological tools, but to be exposed to their perspective. 
 
-
-## References
+## References {.unnumbered}

@@ -6,10 +6,17 @@ book:
   author: "Jon Zelner"
   date: "9/8/2023"
   chapters:
-    - index.qmd
-    - invitation.qmd
-
-
-bibliography: contextual-epi.bib
-
+    - part: Introduction
+      chapters:
+        - index.qmd
+        - invitation.qmd
+    - part: relationships.qmd
+      chapters:
+        - space.qmd
+        - time.qmd
+        - people.qmd
   
+
+number-depth: 1
+bibliography: contextual-epi.bib
+csl: american-journal-of-epidemiology.csl

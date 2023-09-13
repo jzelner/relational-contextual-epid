@@ -1,6 +1,6 @@
-# An invitation  
+# An invitation to relaitonal epidemiology 
 
-One theme that comes up consistently when I'm teaching and talking to students and others about spatial epidemiology is that it is an aura of inaccessibility. This makes a certain kind of sense: Making maps and measuring and modeling spatial relationships might seem like it is outside of the classic analytic toolkit of working epidemiologists, not to mention other fields in public health, medicine, and the social sciences. In fact, this was my take on it as well, until I realized space has always been at the heart of my research, even when I didn't realize it! 
+One theme that comes up consistently when I'm teaching and talking to students and others about spatial or relational epidemiology is that it is an aura of inaccessibility. This makes a certain kind of sense: Making maps and measuring and modeling spatial relationships might seem like it is outside of the classic analytic toolkit of working epidemiologists, not to mention other fields in public health, medicine, and the social sciences. In fact, this was my take on it as well, until I realized space has always been at the heart of my research, even when I didn't realize it! 
 
 The diagram in @fig-wisdom reflects my interpretation of the way someone coming to this area of research and practice for the first time might see it: 
 
@@ -29,7 +29,7 @@ My goal in this short essay is to chip away a bit at the idea of spatial epidemi
 
 To explain what I mean, and why I think it's important, I'm going to subject you to a bit of autobiography about my own intellectual and professional trajectory.
 
-# Maps: Gateway or destination?
+## Maps: Gateway or destination?
 
 I began working as an epidemiologist or epidemology-adjacent type as a PhD student at the University of Michigan some time around 2006. As part of my dissertation research, I worked with [Joe Eisenberg](https://sph.umich.edu/faculty-profiles/eisenberg-joseph.html) on an analysis ofthe role of social networks as sources of risk and protection against diarrheal disease and other infections in a group of villages in an area of rural Ecuador:
 
@@ -73,7 +73,7 @@ And when I did this, we instantly saw that there were seemingly meaningful diffe
 
 This was the moment, some 10 years after I dipped my toes into the world of infectious disease epidemiology, where I realized I had been doing spatial work all along.
 
-### So what?
+## So what?
 
 Why am I bothering you with this tedious and indulgent bit of personal history? *It's because it took me way too long to recognize that spatial epidemiology was a wrapper around a set of skills and ideas I had been working with for many years before I recognized what I was doing.* I was intimidated by anything preceded by 'spatial-': it sounded like a bunch of skills I didn't have and couldn't acquire.
 
@@ -83,4 +83,4 @@ This means that you don't need to identify as a spatial analyst to be one. And i
 
 [^1]: Though you probably need to be working near-ish to a field for it to happen by chance: there is little chance of me taking on the characteristics a particle physicist or chemical engineer by chance, but I wouldn't rule out lepidopterist or archaeologist entirely!
 
-# References
+## References {.unnumbered}
