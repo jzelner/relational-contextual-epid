@@ -1,6 +1,10 @@
 project:
   type: book
 
+format:
+  html: default
+  pdf: default
+
 book:
   title: "Field Guide of Contextual and Relational Epidemiology"
   author: "Jon Zelner"
