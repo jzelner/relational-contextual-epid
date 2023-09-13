@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Field Guide of Contextual and Relational Epidemiology - 2&nbsp; An invitation</title>
+<title>Field Guide of Contextual and Relational Epidemiology - 2&nbsp; An invitation to relaitonal epidemiology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,10 +17,29 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,6 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./relationships.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -56,7 +76,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
@@ -70,11 +91,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li><li class="breadcrumb-item"><a href="./invitation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation to relaitonal epidemiology</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -82,47 +108,86 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Field Guide of Contextual and Relational Epidemiology</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inspirations and Influences</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inspirations and Influences</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./invitation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation</span></a>
+  <a href="./invitation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation to relaitonal epidemiology</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./relationships.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Relationships</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./space.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Space</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Time</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./people.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">People</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#you-are-almost-certainly-a-spatial-analyst-already" id="toc-you-are-almost-certainly-a-spatial-analyst-already" class="nav-link active" data-scroll-target="#you-are-almost-certainly-a-spatial-analyst-already"><span class="toc-section-number">2.1</span>  You are (almost certainly) a spatial analyst already</a></li>
-  <li><a href="#maps-gateway-or-destination" id="toc-maps-gateway-or-destination" class="nav-link" data-scroll-target="#maps-gateway-or-destination"><span class="toc-section-number">3</span>  Maps: Gateway or destination?</a>
-  <ul class="collapse">
-  <li><a href="#a-process-of-progressive-revelation" id="toc-a-process-of-progressive-revelation" class="nav-link" data-scroll-target="#a-process-of-progressive-revelation"><span class="toc-section-number">3.1</span>  A process of progressive revelation</a>
-  <ul class="collapse">
-  <li><a href="#so-what" id="toc-so-what" class="nav-link" data-scroll-target="#so-what"><span class="toc-section-number">3.1.1</span>  So what?</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">4</span>  References</a></li>
+  <li><a href="#you-are-almost-certainly-a-spatial-analyst-already" id="toc-you-are-almost-certainly-a-spatial-analyst-already" class="nav-link active" data-scroll-target="#you-are-almost-certainly-a-spatial-analyst-already">You are (almost certainly) a spatial analyst already</a></li>
+  <li><a href="#maps-gateway-or-destination" id="toc-maps-gateway-or-destination" class="nav-link" data-scroll-target="#maps-gateway-or-destination">Maps: Gateway or destination?</a></li>
+  <li><a href="#a-process-of-progressive-revelation" id="toc-a-process-of-progressive-revelation" class="nav-link" data-scroll-target="#a-process-of-progressive-revelation">A process of progressive revelation</a></li>
+  <li><a href="#so-what" id="toc-so-what" class="nav-link" data-scroll-target="#so-what">So what?</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -131,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation to relaitonal epidemiology</span></h1>
 </div>
 
 
@@ -146,14 +211,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>One theme that comes up consistently when I’m teaching and talking to students and others about spatial epidemiology is that it is an aura of inaccessibility. This makes a certain kind of sense: Making maps and measuring and modeling spatial relationships might seem like it is outside of the classic analytic toolkit of working epidemiologists, not to mention other fields in public health, medicine, and the social sciences. In fact, this was my take on it as well, until I realized space has always been at the heart of my research, even when I didn’t realize it!</p>
+<p>One theme that comes up consistently when I’m teaching and talking to students and others about spatial or relational epidemiology is that it is an aura of inaccessibility. This makes a certain kind of sense: Making maps and measuring and modeling spatial relationships might seem like it is outside of the classic analytic toolkit of working epidemiologists, not to mention other fields in public health, medicine, and the social sciences. In fact, this was my take on it as well, until I realized space has always been at the heart of my research, even when I didn’t realize it!</p>
 <p>The diagram in <a href="#fig-wisdom">Figure&nbsp;<span>2.1</span></a> reflects my interpretation of the way someone coming to this area of research and practice for the first time might see it:</p>
 <div class="cell" data-fig-responsive="false" data-fig-width="2">
 <div class="cell-output-display">
 <div id="fig-wisdom" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart 
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-wisdom">flowchart 
   A(Decide to do spatial epidemiology) --&gt; G(Collect spatial data)
   G --&gt; D(Measure clustering and &lt;br&gt; other spatial descriptives)
   G --&gt; F(Make descriptive maps)
@@ -164,28 +229,25 @@ ul.task-list li input[type="checkbox"] {
   J --&gt; K(Evaluate)
   K --&gt; G
 </pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
 </div>
-<p></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2.1: A textbook version of the spatial epidemiology workflow, without all the twists and turns that characterize actual research.</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2.1: A textbook version of the spatial epidemiology workflow, without all the twists and turns that characterize actual research.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>In this view, spatial epidemiology or analysis is taken to be a set of relatively fixed and well-described ideas and procedures connected to a highly technical set of methods. When we come from this perspective, starting a spatial project requires us to embark with a backpack that is already filled with specialized spatial tools.</p>
-<section id="you-are-almost-certainly-a-spatial-analyst-already" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="you-are-almost-certainly-a-spatial-analyst-already"><span class="header-section-number">2.1</span> You are (almost certainly) a spatial analyst already</h2>
+<section id="you-are-almost-certainly-a-spatial-analyst-already" class="level2">
+<h2 class="anchored" data-anchor-id="you-are-almost-certainly-a-spatial-analyst-already">You are (almost certainly) a spatial analyst already</h2>
 <p>My goal in this short essay is to chip away a bit at the idea of spatial epidemiology as something separate and apart from mainstream epidemiology and health. Instead, I argue that it is better understood as an emergent phenomenon that acts as a loose wrapper around a core set of ideas and tools that are part of the working arsenal of most professionals, students, and researchers in public health.</p>
 <p>To explain what I mean, and why I think it’s important, I’m going to subject you to a bit of autobiography about my own intellectual and professional trajectory.</p>
 </section>
-<section id="maps-gateway-or-destination" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Maps: Gateway or destination?</h1>
+<section id="maps-gateway-or-destination" class="level2">
+<h2 class="anchored" data-anchor-id="maps-gateway-or-destination">Maps: Gateway or destination?</h2>
 <p>I began working as an epidemiologist or epidemology-adjacent type as a PhD student at the University of Michigan some time around 2006. As part of my dissertation research, I worked with <a href="https://sph.umich.edu/faculty-profiles/eisenberg-joseph.html">Joe Eisenberg</a> on an analysis ofthe role of social networks as sources of risk and protection against diarrheal disease and other infections in a group of villages in an area of rural Ecuador:</p>
 <div id="fig-ecuador" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="invitation/ajph-figure.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: A figure from my dissertation research representing hypothesized relationships between village context (represented by inaccessibility or ‘remoteness’) and variation in disease outcomes within and between villages. (From <span class="citation" data-cites="zelner2012">(<a href="#ref-zelner2012" role="doc-biblioref"><strong>zelner2012?</strong></a>)</span>)</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2.2: A figure from my dissertation research representing hypothesized relationships between village context (represented by inaccessibility or ‘remoteness’) and variation in disease outcomes within and between villages. (From <span class="citation" data-cites="zelner2012">(<a href="#ref-zelner2012" role="doc-biblioref"><strong>zelner2012?</strong></a>)</span>)</figcaption>
 </figure>
 </div>
 <p>Looking back, this was indisputably a spatial analysis: We were interested in how local social contexts impacted variation in health outcomes <em>across</em> a set of 20+ villages and also how within-village variation in social connectivity impacted risk <em>within</em> villages.</p>
@@ -196,52 +258,63 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Network analysis: How does the <em>structure</em> of relationships impact individual and community health?</p></li>
 </ol>
 <p>As it happened, all of these things were correct. But what I didn’t really understand at the time was that the collection of these different approaches into a single analysis made it spatial or geographic in nature, even if I didn’t realize it</p>
-<section id="a-process-of-progressive-revelation" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="a-process-of-progressive-revelation"><span class="header-section-number">3.1</span> A process of progressive revelation</h2>
-<p>As a postdoc, working with <a href="https://ysph.yale.edu/profile/theodore-cohen/">Ted Cohen</a>, I began analyzing data from a large study of household-level tuberculosis transmission in Lima, Peru. <a href="#fig-lima-household">Figure&nbsp;<span>3.2</span></a> illustrates the model we developed to characterize household-level differences in transmission rates as a function of exposure type:</p>
+</section>
+<section id="a-process-of-progressive-revelation" class="level2">
+<h2 class="anchored" data-anchor-id="a-process-of-progressive-revelation">A process of progressive revelation</h2>
+<p>As a postdoc, working with <a href="https://ysph.yale.edu/profile/theodore-cohen/">Ted Cohen</a>, I began analyzing data from a large study of household-level tuberculosis transmission in Lima, Peru. <a href="#fig-lima-household">Figure&nbsp;<span>2.3</span></a> illustrates the model we developed to characterize household-level differences in transmission rates as a function of exposure type:</p>
 <div id="fig-lima-household" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="invitation/lima-household.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: Characterizing household-level variation in risks of infection from community vs.&nbsp;household exposures (Figure from <span class="citation" data-cites="zelner2014">(<a href="#ref-zelner2014" role="doc-biblioref"><strong>zelner2014?</strong></a>)</span>)</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2.3: Characterizing household-level variation in risks of infection from community vs.&nbsp;household exposures (Figure from <span class="citation" data-cites="zelner2014">(<a href="#ref-zelner2014" role="doc-biblioref"><strong>zelner2014?</strong></a>)</span>)</figcaption>
 </figure>
 </div>
 <p>At the time, I knew that these households were distributed across neighborhoods of Lima, but I didn’t give it much thought. I was more interested in risks experienced by an average household. And to be honest, I didn’t know that spatial metadata were available on each of the households, since I wasn’t involved with the data collection!</p>
-<p>In the interim, I got the chance to work on some collaborative projects with an explicitly spatial focus. In one, we reconstructed an outbreak of morbillivirus (think: measles) among a herd of migratory dolphins (<a href="#fig-dolphin">Figure&nbsp;<span>3.3</span></a>).</p>
+<p>In the interim, I got the chance to work on some collaborative projects with an explicitly spatial focus. In one, we reconstructed an outbreak of morbillivirus (think: measles) among a herd of migratory dolphins (<a href="#fig-dolphin">Figure&nbsp;<span>2.4</span></a>).</p>
 <div id="fig-dolphin" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="invitation/dolphin-strandings.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.3: Locations of dolphin strandings during a morbillivirus outbreak in the North Atlantic (dot size indicates a greater number of strandings; Figure from <span class="citation" data-cites="morris2015">(<a href="#ref-morris2015" role="doc-biblioref"><strong>morris2015?</strong></a>)</span>)</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2.4: Locations of dolphin strandings during a morbillivirus outbreak in the North Atlantic (dot size indicates a greater number of strandings; Figure from <span class="citation" data-cites="morris2015">(<a href="#ref-morris2015" role="doc-biblioref">1</a>)</span>)</figcaption>
 </figure>
 </div>
-<p>In another, we looked at the relationship between environmental risks, such as neighborhood-level flooding, on the rate of pediatric diarrheal disease in Ho Chi Minh City in Vietnam (<a href="#fig-hcmc">Figure&nbsp;<span>3.4</span></a>).</p>
+<p>In another, we looked at the relationship between environmental risks, such as neighborhood-level flooding, on the rate of pediatric diarrheal disease in Ho Chi Minh City in Vietnam (<a href="#fig-hcmc">Figure&nbsp;<span>2.5</span></a>).</p>
 <div id="fig-hcmc" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="invitation/hcmc-diarrhea.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.4: Incidence of pediatric diarrhea across neighborhoods of Ho Chi Minh City, Vietnam (Figure from <span class="citation" data-cites="thompson2015">(<a href="#ref-thompson2015" role="doc-biblioref"><strong>thompson2015?</strong></a>)</span>)</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2.5: Incidence of pediatric diarrhea across neighborhoods of Ho Chi Minh City, Vietnam (Figure from <span class="citation" data-cites="thompson2015">(<a href="#ref-thompson2015" role="doc-biblioref">2</a>)</span>)</figcaption>
 </figure>
 </div>
-<p>These were the first experiences I had explicitly looking at these outcomes as a function of geographic space. While I had previously thought that mapping and spatial analysis and health geography were big scary things I couldn’t do, I started to realize something important: These projects were not substantively very distinct from ones I had done before. The difference was that we were explicitly talking about spatial relationships and making maps (or simple one-dimensional diagrams as in <a href="#fig-dolphin">Figure&nbsp;<span>3.3</span></a>), instead of implicitly as in <a href="#fig-ecuador">Figure&nbsp;<span>3.1</span></a> or <a href="#fig-lima-household">Figure&nbsp;<span>3.2</span></a>.</p>
+<p>These were the first experiences I had explicitly looking at these outcomes as a function of geographic space. While I had previously thought that mapping and spatial analysis and health geography were big scary things I couldn’t do, I started to realize something important: These projects were not substantively very distinct from ones I had done before. The difference was that we were explicitly talking about spatial relationships and making maps (or simple one-dimensional diagrams as in <a href="#fig-dolphin">Figure&nbsp;<span>2.4</span></a>), instead of implicitly as in <a href="#fig-ecuador">Figure&nbsp;<span>2.2</span></a> or <a href="#fig-lima-household">Figure&nbsp;<span>2.3</span></a>.</p>
 <p>After completing these other projects, I dove back in to the Lima TB data to look at the drivers of multi-drug resistant TB (MDR-TB) risk. This was when I finally found out (some 2 years after I had started working with these data!) that spatial information on each household was available. So, with great trepidation, for the first time I made a map to explore spatial variability in MDR-TB outcomes.</p>
 <p>And when I did this, we instantly saw that there were seemingly meaningful differences in the rate of TB overall, and MDR-TB in particular, across different health center catchment areas:</p>
 <div id="fig-lima-tb" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="invitation/my_first_map.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.5: The first map(s) I ever made, from <span class="citation" data-cites="zelner2016">(<a href="#ref-zelner2016" role="doc-biblioref"><strong>zelner2016?</strong></a>)</span>, nearly 10 years after I started my research career.</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2.6: The first map(s) I ever made, from <span class="citation" data-cites="zelner2016">(<a href="#ref-zelner2016" role="doc-biblioref">3</a>)</span>, nearly 10 years after I started my research career.</figcaption>
 </figure>
 </div>
 <p>This was the moment, some 10 years after I dipped my toes into the world of infectious disease epidemiology, where I realized I had been doing spatial work all along.</p>
-<section id="so-what" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="so-what"><span class="header-section-number">3.1.1</span> So what?</h3>
+</section>
+<section id="so-what" class="level2">
+<h2 class="anchored" data-anchor-id="so-what">So what?</h2>
 <p>Why am I bothering you with this tedious and indulgent bit of personal history? <em>It’s because it took me way too long to recognize that spatial epidemiology was a wrapper around a set of skills and ideas I had been working with for many years before I recognized what I was doing.</em> I was intimidated by anything preceded by ‘spatial-’: it sounded like a bunch of skills I didn’t have and couldn’t acquire.</p>
 <p>But my belated realization about the emergent quality of spatial epidemiology has been really important and helpful for me. It made me realize that when I push into new areas - in life as much as research - that I probably have more of the tools I need than I realized in advance.</p>
 <p>This means that you don’t need to identify as a spatial analyst to be one. And if you want to think of yourself as one, you should, because ultimately it is the intention to engage with spatial relationships and geographic variation in a meaningful way that makes you a health geographer or spatial epidemiologist. This is likely true for many if not most scientific subfields<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but this one is mine and I’m glad I finally realized it!</p>
 </section>
-</section>
-</section>
-<section id="references" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> References</h1>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-morris2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Morris SE, Zelner JL, Fauquier DA, et al. Partially observed epidemics in wildlife hosts: Modelling an outbreak of dolphin morbillivirus in the northwestern <span>Atlantic</span>, <span>June</span> 2013. <em>Journal of The Royal Society Interface</em> [electronic article]. 2015;12(112):20150676. (<a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2015.0676">https://royalsocietypublishing.org/doi/10.1098/rsif.2015.0676</a>). (Accessed December 15, 2019)</div>
+</div>
+<div id="ref-thompson2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Thompson CN, Zelner JL, Nhu TDH, et al. The impact of environmental and climatic variation on the spatiotemporal trends of hospitalized pediatric diarrhea in <span>Ho Chi Minh City</span>, <span>Vietnam</span>. <em>Health &amp; Place</em> [electronic article]. 2015;35:147–154. (<a href="https://linkinghub.elsevier.com/retrieve/pii/S1353829215001094">https://linkinghub.elsevier.com/retrieve/pii/S1353829215001094</a>). (Accessed December 15, 2019)</div>
+</div>
+<div id="ref-zelner2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Zelner JL, Murray MB, Becerra MC, et al. Identifying <span>Hotspots</span> of <span>Multidrug-Resistant Tuberculosis Transmission Using Spatial</span> and <span>Molecular Genetic Data</span>. <em>Journal of Infectious Diseases</em> [electronic article]. 2016;213(2):287–294. (<a href="https://academic.oup.com/jid/article-lookup/doi/10.1093/infdis/jiv387">https://academic.oup.com/jid/article-lookup/doi/10.1093/infdis/jiv387</a>). (Accessed December 15, 2019)</div>
+</div>
+</div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
@@ -278,9 +351,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -345,6 +432,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -391,6 +564,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./relationships.html" class="pagination-link">
+        <span class="nav-page-text">Relationships</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
