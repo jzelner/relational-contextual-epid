@@ -2,86 +2,79 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Field Guide of Contextual and Relational Epidemiology",
+    "title": "Field Guide of Relational and Contextual Epidemiology",
     "section": "",
-    "text": "1 Inspirations and Influences\nWhat - if any - kind of book needs to be written in the realm of contextual epidemiology? And why would I decide to write something like this?"
+    "text": "1 Inspirations and Influences\nWhat - if any - kind of book needs to be written about relational and contextual epidemiology?"
   },
   {
-    "objectID": "index.html#what-is-the-problem-to-be-solved",
-    "href": "index.html#what-is-the-problem-to-be-solved",
-    "title": "Field Guide of Contextual and Relational Epidemiology",
-    "section": "What is the problem to be solved?",
-    "text": "What is the problem to be solved?\nThere seems to be a hole in the literature on spatial epidemiology that comes to grips with the human aspects of risk. This is a particularly hard problem in infectious disease epidemiology, where the role and importance of context is increasingly understood, but it has an uneasy coexistence with the mainstream of the field.\nIn many ways, my goal in writing this is selfish, to satisfy a personal curiosity I suspect is of some greater import to at least a few people. Specifically: What does it mean to do contextual epidemiology? Is this a meaningless term that just appeals to the social and natural science centers of my brain, or is it tapping into something more meaningful?\nPart of my inspiration is a reaction to the technocratic impulse and imperative in modern epidemiology. In particular, I find myself a bit paralyzed by the worry about what happens when we operate under the assumption that escalating methodological complexity is an imperative and that the road out of socio-epidemiological problems is paved with technological solutions.\nOn the other side, simply put, I love the methodological tools of spatial epidemiology, Bayesian hierarchical analysis, and systems modeling. I have learned more than I ever could have hoped through these learning, tinkering with, and applying them to problems both in the real world and in my own head. But for me, the large majority of lessons learned have been from their conceptual isomorphisms (or conflicts) with the world as it appears to us through qualitative and quantitative data, rather than in their parameter values and predictions.\nFor me, this book is about resolving this cognitive dissonance while providing useful ‘how-to’ pointers along the way. I hope to articulate the affirmative case for a systems-based, contextually-sensitive, justice-oriented, morally and ethically opinionated, and theoretically driven approach to epidemiology. Along the way, I hope to show why the tools of such an approach are necessarily heterogeneous in nature and require us to accept uncertaintities quantitative and epistemic."
-  },
-  {
-    "objectID": "index.html#what-are-the-elements-of-contextual-epidemiology",
-    "href": "index.html#what-are-the-elements-of-contextual-epidemiology",
-    "title": "Field Guide of Contextual and Relational Epidemiology",
-    "section": "What are the elements of contextual epidemiology?",
-    "text": "What are the elements of contextual epidemiology?\nI arrived at the idea of contextual epidemiology from spatial and hierarchical analysis. The stereotypical challenge in this setting is to adjust away the impact of context to get at some more generally meaningful parameter estimate, e.g. a treatment effect. But another way of thinking about this is that the hard work is in characterizing not only the ‘main’ or fixed effects, but in capturing the drivers of variability in outcomes across locations.\nBut not every contextual question is strictly spatial: If we care about how the structure of social networks impacts individual and collective risks, we are talking about context once again. In the network example, the context is one’s network ‘neighborhood’, the collection of individuals one interacts with. In reasonably homogeneous networks, groups of individuals may share very similar or almost identitical network contexts.\nUltimately, the key element of context is relatedness: These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartities we see today.\nMaking sense of the types of patterns we see in the real world requires us to first identify:\n\nA question we want or need to answer.\nThe most important types of relationships impacting our outcome of interest (time, space, individual-to-individual).\nA methodological approach that will allow us to characterize the impact of those relationships on the outcome we care about.\n\nIt is important to note that the choice of method comes last here: A key motivation of this book is to sidestep the tendency to train ourselves into methodological hammers looking for data nails to whack away at.\nIn addition to this, there is no pre-supposition that the appropriate method is necessarily ‘fancy’ in the sense of being conceptually or mathematically complex, computationally intensive, or even primarily or at all quantitative in nature. Whether this is the case is entirely a function of what happens at the intersection between question, data, and theory."
-  },
-  {
-    "objectID": "index.html#a-book-not-a-cookbook",
-    "href": "index.html#a-book-not-a-cookbook",
-    "title": "Field Guide of Contextual and Relational Epidemiology",
-    "section": "A book, not a cookbook",
-    "text": "A book, not a cookbook\n\n“A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.” - Douglas Adams, Hitchhikers Guide to the Galaxy"
+    "objectID": "index.html#why-relational-and-contextual-epidemiology",
+    "href": "index.html#why-relational-and-contextual-epidemiology",
+    "title": "Field Guide of Relational and Contextual Epidemiology",
+    "section": "Why relational and contextual epidemiology?",
+    "text": "Why relational and contextual epidemiology?\nThere is a hole in the epidemiological literature that limits our ability to come to grips with the relational aspects of health and illness. For the purposes of this book, relationships are sources of non-independence. These could be social influences, e.g. from our friends and family. But they could also be spatial in nature, e.g. a result of some physically proximate environmental exposure. Often, the relationships we care about are temporal in nature, as is evident in the lifecourse perspective in which early-life exposures are understood to impact later-life outcomes.\nThere are many good books and papers out there about these topics as well as some of their conjunctions with each other (e.g. spatiotemporal analysis). But there is less written about their overlaps and commonalities, why knowing one teaches you so much about the others, and what having access to this set of tools might mean for a working epidemiologist.\nIn many ways, my goal in writing this is selfish, to satisfy a personal curiosity I suspect is of some greater import to at least a few people. Specifically: What does it mean to do contextual or relational epidemiology? Are these meaningless terms that just appeal to the social and natural science centers of my brain, or does this tap into something more meaningful?\n\nMore than methods\nPart of my inspiration is a reaction to the technocratic impulse and imperative in modern epidemiology. In particular, I find myself a bit paralyzed by the worry about what happens when we operate under the assumption that escalating methodological complexity is an imperative and that the road out of socio-epidemiological problems is paved with technological solutions.\n\n\nBut also, methods…\nOn the other side, simply put, I love the methodological tools of spatial epidemiology, Bayesian hierarchical analysis, and systems modeling. I have learned more than I ever could have hoped through these learning, tinkering with, and applying them to problems both in the real world and in my own head. But for me, the large majority of lessons learned have been from their conceptual isomorphisms (or conflicts) with the world as it appears to us through qualitative and quantitative data, rather than in their parameter values and predictions.\nFor me, this book is about resolving this cognitive dissonance while providing useful ‘how-to’ pointers along the way. I hope to articulate the affirmative case for a systems-based, contextually-sensitive, justice-oriented, morally and ethically opinionated, and theoretically driven approach to epidemiology. Along the way, I hope to show why the tools of such an approach are necessarily heterogeneous in nature and require us to accept uncertaintities quantitative and epistemic."
   },
   {
     "objectID": "index.html#influences",
     "href": "index.html#influences",
-    "title": "Field Guide of Contextual and Relational Epidemiology",
+    "title": "Field Guide of Relational and Contextual Epidemiology",
     "section": "Influences",
     "text": "Influences\nThere are any number of books and papers out there that have articulated a similar perspective on the tools of quantitative analysis. The following have been particularly important for my own thinking and their influences will be felt throughout this work:\n\nStatistical Rethinking (1)\nThe Ecological Detective (2)\nARM/Regression and Other Stories (3)\n\nWhat makes these works so useful, strong, and enduring is the way that they articulate a coherent, opinionated perspective on the meaning and use of a set of methodological tools. On top of that, they are engaging and fun to read - the sort of thing you return to over time not just to get specific methodological tools, but to be exposed to their perspective."
   },
   {
     "objectID": "index.html#references",
     "href": "index.html#references",
-    "title": "Field Guide of Contextual and Relational Epidemiology",
+    "title": "Field Guide of Relational and Contextual Epidemiology",
     "section": "References",
     "text": "References\n\n\n\n\n1. McElreath R. Statistical Rethinking: A Bayesian Course with Examples in R and STAN. 2nd edition. Boca Raton: Chapman and Hall/CRC; 2020.\n\n\n2. Hilborn R, Mangel M. The Ecological Detective: Confronting Models with Data. 1st edition. Princeton, NJ: Princeton University Press; 1997.\n\n\n3. Gelman A. Regression and Other Stories. 1st edition. Cambridge: Cambridge University Press; 2020."
   },
   {
-    "objectID": "invitation.html#you-are-almost-certainly-a-spatial-analyst-already",
-    "href": "invitation.html#you-are-almost-certainly-a-spatial-analyst-already",
-    "title": "2  An invitation to relaitonal epidemiology",
-    "section": "You are (almost certainly) a spatial analyst already",
-    "text": "You are (almost certainly) a spatial analyst already\nMy goal in this short essay is to chip away a bit at the idea of spatial epidemiology as something separate and apart from mainstream epidemiology and health. Instead, I argue that it is better understood as an emergent phenomenon that acts as a loose wrapper around a core set of ideas and tools that are part of the working arsenal of most professionals, students, and researchers in public health.\nTo explain what I mean, and why I think it’s important, I’m going to subject you to a bit of autobiography about my own intellectual and professional trajectory."
+    "objectID": "invitation.html#you-are-almost-certainly-a-relational-analyst-already",
+    "href": "invitation.html#you-are-almost-certainly-a-relational-analyst-already",
+    "title": "2  An invitation",
+    "section": "You are (almost certainly) a relational analyst already",
+    "text": "You are (almost certainly) a relational analyst already\nMy goal in this short essay is to chip away a bit at the idea of spatial/relational epidemiology as something separate and apart from mainstream epidemiology and public health. Instead, I argue that these are better understood as a loose wrapper around a core set of ideas and tools that are part of the working arsenal of most professionals, students, and researchers in public health.\nTo explain what I mean, and why I think it’s important, I’m going to subject you to a bit of autobiography about my own intellectual and professional trajectory."
   },
   {
     "objectID": "invitation.html#maps-gateway-or-destination",
     "href": "invitation.html#maps-gateway-or-destination",
-    "title": "2  An invitation to relaitonal epidemiology",
+    "title": "2  An invitation",
     "section": "Maps: Gateway or destination?",
-    "text": "Maps: Gateway or destination?\nI began working as an epidemiologist or epidemology-adjacent type as a PhD student at the University of Michigan some time around 2006. As part of my dissertation research, I worked with Joe Eisenberg on an analysis ofthe role of social networks as sources of risk and protection against diarrheal disease and other infections in a group of villages in an area of rural Ecuador:\n\n\n\nFigure 2.2: A figure from my dissertation research representing hypothesized relationships between village context (represented by inaccessibility or ‘remoteness’) and variation in disease outcomes within and between villages. (From (zelner2012?))\n\n\nLooking back, this was indisputably a spatial analysis: We were interested in how local social contexts impacted variation in health outcomes across a set of 20+ villages and also how within-village variation in social connectivity impacted risk within villages.\nWe employed multi-level data about common characteristics of individual villages, households, and the individuals within them. But at this time, I thought of myself as doing a few things, but none of them were spatial:\n\nInfectious disease epidemiology: Why and how do people become infected with various pathogens?\nSocial epidemiology: How do social relationships impact disease outcomes?\nNetwork analysis: How does the structure of relationships impact individual and community health?\n\nAs it happened, all of these things were correct. But what I didn’t really understand at the time was that the collection of these different approaches into a single analysis made it spatial or geographic in nature, even if I didn’t realize it"
+    "text": "Maps: Gateway or destination?\nI began working as an epidemiologist or epidemology-adjacent type as a PhD student at the University of Michigan some time around 2006. As part of my dissertation research, I worked with Joe Eisenberg on an analysis ofthe role of social networks as sources of risk and protection against diarrheal disease and other infections in a group of villages in an area of rural Ecuador:\n\n\n\nFigure 2.2: A figure from my dissertation research representing hypothesized relationships between village context (represented by inaccessibility or ‘remoteness’) and variation in disease outcomes within and between villages. (From (1))\n\n\nLooking back, this was indisputably a spatial analysis: We were interested in how local social contexts impacted variation in health outcomes across a set of 20+ villages and also how within-village variation in social connectivity impacted risk within villages.\nWe employed multi-level data about common characteristics of individual villages, households, and the individuals within them. But at this time, I thought of myself as doing a few things, but none of them were spatial:\n\nInfectious disease epidemiology: Why and how do people become infected with various pathogens?\nSocial epidemiology: How do social relationships impact disease outcomes?\nNetwork analysis: How does the structure of relationships impact individual and community health?\n\nAs it happened, all of these things were correct. But what I didn’t really understand at the time was that the collection of these different approaches into a single analysis made it spatial or geographic in nature, even if I didn’t realize it"
   },
   {
     "objectID": "invitation.html#a-process-of-progressive-revelation",
     "href": "invitation.html#a-process-of-progressive-revelation",
-    "title": "2  An invitation to relaitonal epidemiology",
+    "title": "2  An invitation",
     "section": "A process of progressive revelation",
-    "text": "A process of progressive revelation\nAs a postdoc, working with Ted Cohen, I began analyzing data from a large study of household-level tuberculosis transmission in Lima, Peru. Figure 2.3 illustrates the model we developed to characterize household-level differences in transmission rates as a function of exposure type:\n\n\n\nFigure 2.3: Characterizing household-level variation in risks of infection from community vs. household exposures (Figure from (zelner2014?))\n\n\nAt the time, I knew that these households were distributed across neighborhoods of Lima, but I didn’t give it much thought. I was more interested in risks experienced by an average household. And to be honest, I didn’t know that spatial metadata were available on each of the households, since I wasn’t involved with the data collection!\nIn the interim, I got the chance to work on some collaborative projects with an explicitly spatial focus. In one, we reconstructed an outbreak of morbillivirus (think: measles) among a herd of migratory dolphins (Figure 2.4).\n\n\n\nFigure 2.4: Locations of dolphin strandings during a morbillivirus outbreak in the North Atlantic (dot size indicates a greater number of strandings; Figure from (1))\n\n\nIn another, we looked at the relationship between environmental risks, such as neighborhood-level flooding, on the rate of pediatric diarrheal disease in Ho Chi Minh City in Vietnam (Figure 2.5).\n\n\n\nFigure 2.5: Incidence of pediatric diarrhea across neighborhoods of Ho Chi Minh City, Vietnam (Figure from (2))\n\n\nThese were the first experiences I had explicitly looking at these outcomes as a function of geographic space. While I had previously thought that mapping and spatial analysis and health geography were big scary things I couldn’t do, I started to realize something important: These projects were not substantively very distinct from ones I had done before. The difference was that we were explicitly talking about spatial relationships and making maps (or simple one-dimensional diagrams as in Figure 2.4), instead of implicitly as in Figure 2.2 or Figure 2.3.\nAfter completing these other projects, I dove back in to the Lima TB data to look at the drivers of multi-drug resistant TB (MDR-TB) risk. This was when I finally found out (some 2 years after I had started working with these data!) that spatial information on each household was available. So, with great trepidation, for the first time I made a map to explore spatial variability in MDR-TB outcomes.\nAnd when I did this, we instantly saw that there were seemingly meaningful differences in the rate of TB overall, and MDR-TB in particular, across different health center catchment areas:\n\n\n\nFigure 2.6: The first map(s) I ever made, from (3), nearly 10 years after I started my research career.\n\n\nThis was the moment, some 10 years after I dipped my toes into the world of infectious disease epidemiology, where I realized I had been doing spatial work all along."
+    "text": "A process of progressive revelation\nAs a postdoc, working with Ted Cohen, I began analyzing data from a large study of household-level tuberculosis transmission in Lima, Peru. Figure 2.3 illustrates the model we developed to characterize household-level differences in transmission rates as a function of exposure type:\n\n\n\nFigure 2.3: Characterizing household-level variation in risks of infection from community vs. household exposures (Figure from (2))\n\n\nAt the time, I knew that these households were distributed across neighborhoods of Lima, but I didn’t give it much thought. I was more interested in risks experienced by an average household. And to be honest, I didn’t know that spatial metadata were available on each of the households, since I wasn’t involved with the data collection!\nIn the interim, I got the chance to work on some collaborative projects with an explicitly spatial focus. In one, we reconstructed an outbreak of morbillivirus (think: measles) among a herd of migratory dolphins (Figure 2.4).\n\n\n\nFigure 2.4: Locations of dolphin strandings during a morbillivirus outbreak in the North Atlantic (dot size indicates a greater number of strandings; Figure from (3))\n\n\nIn another, we looked at the relationship between environmental risks, such as neighborhood-level flooding, on the rate of pediatric diarrheal disease in Ho Chi Minh City in Vietnam (Figure 2.5).\n\n\n\nFigure 2.5: Incidence of pediatric diarrhea across neighborhoods of Ho Chi Minh City, Vietnam (Figure from (4))\n\n\nThese were the first experiences I had explicitly looking at these outcomes as a function of geographic space. While I had previously thought that mapping and spatial analysis and health geography were big scary things I couldn’t do, I started to realize something important: These projects were not substantively very distinct from ones I had done before. The difference was that we were explicitly talking about spatial relationships and making maps (or simple one-dimensional diagrams as in Figure 2.4), instead of implicitly as in Figure 2.2 or Figure 2.3.\nAfter completing these other projects, I dove back in to the Lima TB data to look at the drivers of multi-drug resistant TB (MDR-TB) risk. This was when I finally found out (some 2 years after I had started working with these data!) that spatial information on each household was available. So, with great trepidation, for the first time I made a map to explore spatial variability in MDR-TB outcomes.\nAnd when I did this, we instantly saw that there were seemingly meaningful differences in the rate of TB overall, and MDR-TB in particular, across different health center catchment areas:\n\n\n\nFigure 2.6: The first map(s) I ever made, from (5), nearly 10 years after I started my research career.\n\n\nThis was the moment, some 10 years after I dipped my toes into the world of infectious disease epidemiology, where I realized I had been doing spatial work all along."
   },
   {
     "objectID": "invitation.html#so-what",
     "href": "invitation.html#so-what",
-    "title": "2  An invitation to relaitonal epidemiology",
+    "title": "2  An invitation",
     "section": "So what?",
-    "text": "So what?\nWhy am I bothering you with this tedious and indulgent bit of personal history? It’s because it took me way too long to recognize that spatial epidemiology was a wrapper around a set of skills and ideas I had been working with for many years before I recognized what I was doing. I was intimidated by anything preceded by ‘spatial-’: it sounded like a bunch of skills I didn’t have and couldn’t acquire.\nBut my belated realization about the emergent quality of spatial epidemiology has been really important and helpful for me. It made me realize that when I push into new areas - in life as much as research - that I probably have more of the tools I need than I realized in advance.\nThis means that you don’t need to identify as a spatial analyst to be one. And if you want to think of yourself as one, you should, because ultimately it is the intention to engage with spatial relationships and geographic variation in a meaningful way that makes you a health geographer or spatial epidemiologist. This is likely true for many if not most scientific subfields1, but this one is mine and I’m glad I finally realized it!"
+    "text": "So what?\nWhy am I bothering you with this tedious and indulgent bit of personal history? It’s because it took me way too long to recognize that spatial epidemiology was a wrapper around a set of skills and ideas I had been working with for many years before I recognized what I was doing. I was intimidated by anything preceded by ‘spatial-’: it sounded like a bunch of skills I didn’t have and couldn’t acquire.\nMy belated realization about the emergent quality of spatial epidemiology, and its broader connection to relational thinking in public health and the social sciences, has been crucially important for me. It made me realize that when I push into new areas - in life as much as research - that I probably have more of the tools I need than I realized in advance.\nThis means that you don’t need to identify as a spatial or network or time series analyst to be one. And if you want to think of yourself as one, you should, because ultimately it is the intention to engage with the spatial, social and temporal relationships that drive health outcomes that makes the difference. This is likely true for many if not most scientific subfields1, but this one is mine and I’m glad I finally realized it!"
   },
   {
     "objectID": "invitation.html#references",
     "href": "invitation.html#references",
-    "title": "2  An invitation to relaitonal epidemiology",
+    "title": "2  An invitation",
     "section": "References",
-    "text": "References\n\n\n\n\n1. Morris SE, Zelner JL, Fauquier DA, et al. Partially observed epidemics in wildlife hosts: Modelling an outbreak of dolphin morbillivirus in the northwestern Atlantic, June 2013. Journal of The Royal Society Interface [electronic article]. 2015;12(112):20150676. (https://royalsocietypublishing.org/doi/10.1098/rsif.2015.0676). (Accessed December 15, 2019)\n\n\n2. Thompson CN, Zelner JL, Nhu TDH, et al. The impact of environmental and climatic variation on the spatiotemporal trends of hospitalized pediatric diarrhea in Ho Chi Minh City, Vietnam. Health & Place [electronic article]. 2015;35:147–154. (https://linkinghub.elsevier.com/retrieve/pii/S1353829215001094). (Accessed December 15, 2019)\n\n\n3. Zelner JL, Murray MB, Becerra MC, et al. Identifying Hotspots of Multidrug-Resistant Tuberculosis Transmission Using Spatial and Molecular Genetic Data. Journal of Infectious Diseases [electronic article]. 2016;213(2):287–294. (https://academic.oup.com/jid/article-lookup/doi/10.1093/infdis/jiv387). (Accessed December 15, 2019)"
+    "text": "References\n\n\n\n\n1. Zelner JL, Trostle J, Goldstick JE, et al. Social Connectedness and Disease Transmission: Social Organization, Cohesion, Village Context, and Infection Risk in Rural Ecuador. American Journal of Public Health [electronic article]. 2012;102(12):2233–2239. (http://ajph.aphapublications.org/doi/10.2105/AJPH.2012.300795). (Accessed December 15, 2019)\n\n\n2. Zelner JL, Murray MB, Becerra MC, et al. Age-Specific Risks of Tuberculosis Infection From Household and Community Exposures and Opportunities for Interventions in a High-Burden Setting. American Journal of Epidemiology [electronic article]. 2014;180(8):853–861. (https://academic.oup.com/aje/article-lookup/doi/10.1093/aje/kwu192). (Accessed December 15, 2019)\n\n\n3. Morris SE, Zelner JL, Fauquier DA, et al. Partially observed epidemics in wildlife hosts: Modelling an outbreak of dolphin morbillivirus in the northwestern Atlantic, June 2013. Journal of The Royal Society Interface [electronic article]. 2015;12(112):20150676. (https://royalsocietypublishing.org/doi/10.1098/rsif.2015.0676). (Accessed December 15, 2019)\n\n\n4. Thompson CN, Zelner JL, Nhu TDH, et al. The impact of environmental and climatic variation on the spatiotemporal trends of hospitalized pediatric diarrhea in Ho Chi Minh City, Vietnam. Health & Place [electronic article]. 2015;35:147–154. (https://linkinghub.elsevier.com/retrieve/pii/S1353829215001094). (Accessed December 15, 2019)\n\n\n5. Zelner JL, Murray MB, Becerra MC, et al. Identifying Hotspots of Multidrug-Resistant Tuberculosis Transmission Using Spatial and Molecular Genetic Data. Journal of Infectious Diseases [electronic article]. 2016;213(2):287–294. (https://academic.oup.com/jid/article-lookup/doi/10.1093/infdis/jiv387). (Accessed December 15, 2019)"
   },
   {
     "objectID": "invitation.html#footnotes",
     "href": "invitation.html#footnotes",
-    "title": "2  An invitation to relaitonal epidemiology",
+    "title": "2  An invitation",
     "section": "",
-    "text": "Though you probably need to be working near-ish to a field for it to happen by chance: there is little chance of me taking on the characteristics a particle physicist or chemical engineer by chance, but I wouldn’t rule out lepidopterist or archaeologist entirely!↩︎"
+    "text": "To be fair, you probably need to be working near-ish to a field for it to happen by chance: there is little chance of me taking on the characteristics a particle physicist or chemical engineer by chance, but I wouldn’t rule out lepidopterist or archaeologist entirely!↩︎"
+  },
+  {
+    "objectID": "elements.html#problem-orientation-is-nonnegotiable",
+    "href": "elements.html#problem-orientation-is-nonnegotiable",
+    "title": "3  What are the elements of relational epidemiology?",
+    "section": "Problem-orientation is nonnegotiable",
+    "text": "Problem-orientation is nonnegotiable\n\n“A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.” - Douglas Adams, Hitchhikers Guide to the Galaxy.\n\nSometimes, methods-y topics in epidemiology and public health are boiled down to a sequence of steps to be applied to each new problem. In the worst cases, they come to us as a series of copy-paste, plug-and-chug pieces of code to be reused each time the same type of problem is encountered.\nBeyond being a boring way to learn, this has the effect of putting the methods at the front of the train, with the question or problem implicitly assumed to be an opportunity or excuse to employ the model.\nThis is an approach that can get you some publications and maybe a little bit of clout within the musty world of academia, but it doesn’t do much to solve the types of problems working epidemiologists face. And in truth, it doesn’t even work so well on the academic side of the fence.\nInside the universe of this book, the problem is the first and most important thing. The question is the fixed point against which our analytic approaches are chosen. This means that there are no fixed methodological answers to applied questions: Our methodological approaches and tools must be as diverse and heterodox as the questions the world throws at us.\nMaking sense of the types of patterns we see in the real world requires us to first identify:\n\nA question we want or need to answer.\nThe most important types of relationships impacting our outcome of interest (time, space, individual-to-individual).\nA methodological approach that will allow us to characterize the impact of those relationships on the outcome we care about.\n\n\nA methodological caboose\nIt is important to note that the choice of method comes last here: A key motivation of this book is to sidestep the tendency to train ourselves into methodological hammers looking for data nails to whack away at.\nIn addition to this, there is no pre-supposition that the appropriate method is necessarily ‘fancy’ in the sense of being conceptually or mathematically complex, computationally intensive, or even primarily or at all quantitative in nature. Whether this is the case is entirely a function of what happens at the intersection between question, data, and theory."
   },
   {
     "objectID": "relationships.html",
@@ -93,49 +86,49 @@
   {
     "objectID": "social.html#social-stratification-inequality",
     "href": "social.html#social-stratification-inequality",
-    "title": "3  Social",
+    "title": "4  Social",
     "section": "Social Stratification & Inequality",
     "text": "Social Stratification & Inequality"
   },
   {
     "objectID": "social.html#social-networks",
     "href": "social.html#social-networks",
-    "title": "3  Social",
+    "title": "4  Social",
     "section": "Social Networks",
     "text": "Social Networks"
   },
   {
     "objectID": "spatial.html#physical-space",
     "href": "spatial.html#physical-space",
-    "title": "4  Spatial",
+    "title": "5  Spatial",
     "section": "Physical Space",
     "text": "Physical Space"
   },
   {
     "objectID": "spatial.html#social-space",
     "href": "spatial.html#social-space",
-    "title": "4  Spatial",
+    "title": "5  Spatial",
     "section": "Social Space",
     "text": "Social Space"
   },
   {
     "objectID": "temporal.html#short-term-correlation-and-fluctuation",
     "href": "temporal.html#short-term-correlation-and-fluctuation",
-    "title": "5  Temporal",
+    "title": "6  Temporal",
     "section": "Short-term correlation and fluctuation",
     "text": "Short-term correlation and fluctuation"
   },
   {
     "objectID": "temporal.html#time-series",
     "href": "temporal.html#time-series",
-    "title": "5  Temporal",
+    "title": "6  Temporal",
     "section": "Time series",
     "text": "Time series"
   },
   {
     "objectID": "temporal.html#history",
     "href": "temporal.html#history",
-    "title": "5  Temporal",
+    "title": "6  Temporal",
     "section": "History",
     "text": "History"
   }
