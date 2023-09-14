@@ -91,10 +91,52 @@
     "text": "Space, time, and network"
   },
   {
-    "objectID": "space.html#additional-resources",
-    "href": "space.html#additional-resources",
-    "title": "3  Space",
-    "section": "Additional Resources",
-    "text": "Additional Resources\nPlease read the following two pieces that discuss key ideas about geospatial relatedness:\nMiller HJ. Tobler’s First Law and Spatial Analysis. Annals of the Association of American Geographers. 2004;94(2):284-289. doi:10.1111/j.1467-8306.2004.09402005.x\nGoodchild MF. The Validity and Usefulness of Laws in Geographic Information Science and Geography. Annals of the Association of American Geographers. 2004;94(2):300-303. doi:10.1111/j.1467-8306.2004.09402008.x"
+    "objectID": "social.html#social-stratification-inequality",
+    "href": "social.html#social-stratification-inequality",
+    "title": "3  Social",
+    "section": "Social Stratification & Inequality",
+    "text": "Social Stratification & Inequality"
+  },
+  {
+    "objectID": "social.html#social-networks",
+    "href": "social.html#social-networks",
+    "title": "3  Social",
+    "section": "Social Networks",
+    "text": "Social Networks"
+  },
+  {
+    "objectID": "spatial.html#physical-space",
+    "href": "spatial.html#physical-space",
+    "title": "4  Spatial",
+    "section": "Physical Space",
+    "text": "Physical Space"
+  },
+  {
+    "objectID": "spatial.html#social-space",
+    "href": "spatial.html#social-space",
+    "title": "4  Spatial",
+    "section": "Social Space",
+    "text": "Social Space"
+  },
+  {
+    "objectID": "temporal.html#short-term-correlation-and-fluctuation",
+    "href": "temporal.html#short-term-correlation-and-fluctuation",
+    "title": "5  Temporal",
+    "section": "Short-term correlation and fluctuation",
+    "text": "Short-term correlation and fluctuation"
+  },
+  {
+    "objectID": "temporal.html#time-series",
+    "href": "temporal.html#time-series",
+    "title": "5  Temporal",
+    "section": "Time series",
+    "text": "Time series"
+  },
+  {
+    "objectID": "temporal.html#history",
+    "href": "temporal.html#history",
+    "title": "5  Temporal",
+    "section": "History",
+    "text": "History"
   }
 ]
