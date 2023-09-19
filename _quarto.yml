@@ -25,9 +25,11 @@ book:
       chapters:
         - smoothing.qmd
         - density.qmd
+        - radon-multilevel.qmd
+        - spatial-radon.qmd
 
 
-number-depth: 1
+number-depth: 2
 bibliography: contextual-epi.bib
 csl: american-journal-of-epidemiology.csl
 execute:
