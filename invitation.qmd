@@ -1,6 +1,8 @@
-# An invitation to relaitonal epidemiology 
+# An invitation 
 
-One theme that comes up consistently when I'm teaching and talking to students and others about spatial or relational epidemiology is that it is an aura of inaccessibility. This makes a certain kind of sense: Making maps and measuring and modeling spatial relationships might seem like it is outside of the classic analytic toolkit of working epidemiologists, not to mention other fields in public health, medicine, and the social sciences. In fact, this was my take on it as well, until I realized space has always been at the heart of my research, even when I didn't realize it! 
+One theme that comes up consistently when I'm teaching and talking to students and others about topics in relational epidemiology - particularly through my courses on spatial analysis - is that it has an aura of inaccessibility. 
+
+This makes a certain kind of sense: Making maps and measuring and modeling spatial relationships might seem like it is outside of the classic analytic toolkit of working epidemiologists, not to mention other fields in public health, medicine, and the social sciences. In fact, this was my take on it as well, until I realized space has always been at the heart of my research, even when I didn't realize it! 
 
 The diagram in @fig-wisdom reflects my interpretation of the way someone coming to this area of research and practice for the first time might see it: 
 
@@ -23,9 +25,9 @@ flowchart
 
 In this view, spatial epidemiology or analysis is taken to be a set of relatively fixed and well-described ideas and procedures connected to a highly technical set of methods. When we come from this perspective, starting a spatial project requires us to embark with a backpack that is already filled with specialized spatial tools. 
 
-## You are (almost certainly) a spatial analyst already
+## You are (almost certainly) a relational analyst already
 
-My goal in this short essay is to chip away a bit at the idea of spatial epidemiology as something separate and apart from mainstream epidemiology and health. Instead, I argue that it is better understood as an emergent phenomenon that acts as a loose wrapper around a core set of ideas and tools that are part of the working arsenal of most professionals, students, and researchers in public health.
+My goal in this short essay is to chip away a bit at the idea of spatial/relational epidemiology as something separate and apart from mainstream epidemiology and public health. Instead, I argue that these are better understood as a loose wrapper around a core set of ideas and tools that are part of the working arsenal of most professionals, students, and researchers in public health.
 
 To explain what I mean, and why I think it's important, I'm going to subject you to a bit of autobiography about my own intellectual and professional trajectory.
 
@@ -77,10 +79,10 @@ This was the moment, some 10 years after I dipped my toes into the world of infe
 
 Why am I bothering you with this tedious and indulgent bit of personal history? *It's because it took me way too long to recognize that spatial epidemiology was a wrapper around a set of skills and ideas I had been working with for many years before I recognized what I was doing.* I was intimidated by anything preceded by 'spatial-': it sounded like a bunch of skills I didn't have and couldn't acquire.
 
-But my belated realization about the emergent quality of spatial epidemiology has been really important and helpful for me. It made me realize that when I push into new areas - in life as much as research - that I probably have more of the tools I need than I realized in advance. 
+My belated realization about the emergent quality of spatial epidemiology, and its broader connection to relational thinking in public health and the social sciences, has been crucially important for me. It made me realize that when I push into new areas - in life as much as research - that I probably have more of the tools I need than I realized in advance. 
 
-This means that you don't need to identify as a spatial analyst to be one. And if you want to think of yourself as one, you should, because ultimately it is the intention to engage with spatial relationships and geographic variation in a meaningful way that makes you a health geographer or spatial epidemiologist. This is likely true for many if not most scientific subfields[^1], but this one is mine and I'm glad I finally realized it!
+This means that you don't need to identify as a spatial or network or time series analyst to be one. And if you want to think of yourself as one, you should, because ultimately it is the intention to engage with the spatial, social and temporal relationships that drive health outcomes  that makes the difference. This is likely true for many if not most scientific subfields[^1], but this one is mine and I'm glad I finally realized it!
 
-[^1]: Though you probably need to be working near-ish to a field for it to happen by chance: there is little chance of me taking on the characteristics a particle physicist or chemical engineer by chance, but I wouldn't rule out lepidopterist or archaeologist entirely!
+[^1]: To be fair, you probably need to be working near-ish to a field for it to happen by chance: there is little chance of me taking on the characteristics a particle physicist or chemical engineer by chance, but I wouldn't rule out lepidopterist or archaeologist entirely!
 
 ## References {.unnumbered}

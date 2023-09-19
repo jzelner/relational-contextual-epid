@@ -1,0 +1,32 @@
+# What are the elements of relational epidemiology? {#sec-elements}
+
+I arrived at the idea of relational epidemiology as an umbrella category from spatial and hierarchical analysis. The stereotypical challenge in this setting is to adjust away the impact of context to get at some more generally meaningful parameter estimate, e.g. a treatment effect. But another way of thinking about this is that the hard work is in characterizing not only the 'main' or fixed effects, but in capturing the drivers of variability in outcomes across locations.
+
+But not every contextual question is strictly spatial: If we care about how the structure of social networks impacts individual and collective risks, we are talking about context once again. In the network example, the context is one's network 'neighborhood', the collection of individuals one interacts with. In reasonably homogeneous networks, groups of individuals may share very similar or almost identitical network contexts. 
+
+Ultimately, the key to understanding context is *relatedness*: Individuals sharing a context are likely to have similar relationships to their physical environment, the societies they are a part of, and potentially to each other, than those not sharing the same context.  These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartities we see today.
+
+## Problem-orientation is nonnegotiable
+
+> "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools." - Douglas Adams, Hitchhikers Guide to the Galaxy.
+
+
+Sometimes, methods-y topics in epidemiology and public health are boiled down to a sequence of steps to be applied to each new problem. In the worst cases, they come to us as a series of copy-paste, plug-and-chug pieces of code to be reused each time the same type of problem is encountered. 
+
+Beyond being a boring way to learn, this has the effect of putting the methods at the front of the train, with the question or problem implicitly assumed to be an opportunity or excuse to employ the model.
+
+This is an approach that can get you some publications and maybe a little bit of clout within the musty world of academia, but it doesn't do much to solve the types of problems working epidemiologists face. And in truth, it doesn't even work so well on the academic side of the fence. 
+
+Inside the universe of this book, the problem is the first and most important thing. The question is the fixed point against which our analytic approaches are chosen. *This means that there are no fixed methodological answers to applied questions: Our methodological approaches and tools must be as diverse and heterodox as the questions the world throws at us.*
+
+Making sense of the types of patterns we see in the real world requires us to first identify:
+
+1. A question we want or need to answer.
+2. The most important types of relationships impacting our outcome of interest (time, space, individual-to-individual).
+3. A methodological approach that will allow us to characterize the impact of those relationships on the outcome we care about. 
+
+### A methodological caboose
+
+It is important to note that the choice of method comes *last* here: A key motivation of this book is to sidestep the tendency to train ourselves into methodological hammers looking for data nails to whack away at. 
+
+In addition to this, there is no pre-supposition that the appropriate method is necessarily 'fancy' in the sense of being conceptually or mathematically complex, computationally intensive, or even primarily or at all quantitative in nature. Whether this is the case is entirely a function of what happens at the intersection between question, data, and theory. 

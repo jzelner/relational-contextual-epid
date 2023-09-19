@@ -2,43 +2,29 @@
 title: "Inspirations and Influences"
 ---
 
-# Inspirations and Influences
+# Inspirations and Influences {#sec-introduction}
 
-What - if any - kind of book needs to be written in the realm of contextual  epidemiology? And why would I decide to write something like this? 
+What - if any - kind of book needs to be written about relational and contextual epidemiology? 
 
-## What is the problem to be solved? 
+## Why relational and contextual epidemiology? 
 
-There seems to be a hole in the literature on spatial epidemiology that comes to grips with the human aspects of risk. This is a particularly hard problem in infectious disease epidemiology, where the role and importance of context is increasingly understood, but it has an uneasy coexistence with the mainstream of the field. 
+There is a hole in the epidemiological literature that limits our ability to come to grips with the *relational* aspects of health and illness. For the purposes of this book, relationships are sources of non-independence. These could be *social* influences, e.g. from our friends and family. But they could also be *spatial* in nature, e.g. a result of some physically proximate environmental exposure. Often, the relationships we care about are *temporal* in nature, as is evident in the lifecourse perspective in which early-life exposures are understood to impact later-life outcomes.  
 
-In many ways, my goal in writing this is selfish, to satisfy a personal curiosity I suspect is of some greater import to at least a few people. Specifically: What does it mean to do *contextual* epidemiology? Is this a meaningless term that just appeals to the social and natural science centers of my brain, or is it tapping into something more meaningful?
+There are many good books and papers out there about these topics as well as some of their conjunctions with each other (e.g. spatiotemporal analysis). But there is less written about their overlaps and commonalities, why knowing one teaches you so much about the others, and what having access to this set of tools might mean for a working epidemiologist.
+
+In many ways, my goal in writing this is selfish, to satisfy a personal curiosity I suspect is of some greater import to at least a few people. Specifically: What does it mean to do *contextual* or *relational* epidemiology? Are these meaningless terms that just appeal to the social and natural science centers of my brain, or does this tap into something more meaningful?
+
+### More than methods
 
 Part of my inspiration is a reaction to the technocratic impulse and imperative in modern epidemiology. In particular, I find myself a bit paralyzed by the worry about what happens when we operate under the assumption that escalating methodological complexity is an imperative and that the road out of socio-epidemiological problems is paved with technological solutions. 
 
-On the other side, simply put, I love the methodological tools of spatial epidemiology, Bayesian hierarchical analysis, and systems modeling. I have learned more than I ever could have hoped through these learning, tinkering with, and applying them to problems both in the real world and in my own head. But for me, the large majority of lessons learned have been from their conceptual isomorphisms (or conflicts) with the world as it appears to us through qualitative and quantitative data, rather than in their parameter values and predictions. 
+
+### But also, methods...
+
+On the other side, simply put, I love the methodological tools of spatial epidemiology, Bayesian hierarchical analysis, and systems modeling. I have learned more than I ever could have hoped through learning, tinkering with, and applying these tools to problems in the real world and in my own head. But for me, the large majority of lessons learned have been from their conceptual isomorphisms (or conflicts) with the world as it appears to us through qualitative and quantitative data, rather than in the exact values of their parameter values and quantitative predictions. 
 
 For me, this book is about resolving this cognitive dissonance while providing useful 'how-to' pointers along the way. I hope to articulate the affirmative case for a systems-based, contextually-sensitive, justice-oriented, morally and ethically opinionated, and theoretically driven approach to epidemiology. Along the way, I hope to show why the tools of such an approach are necessarily heterogeneous in nature and require us to accept uncertaintities quantitative and epistemic. 
 
-## What are the elements of contextual epidemiology?
-
-I arrived at the idea of contextual epidemiology from spatial and hierarchical analysis. The stereotypical challenge in this setting is to adjust away the impact of context to get at some more generally meaningful parameter estimate, e.g. a treatment effect. But another way of thinking about this is that the hard work is in characterizing not only the 'main' or fixed effects, but in capturing the drivers of variability in outcomes across locations.
-
-But not every contextual question is strictly spatial: If we care about how the structure of social networks impacts individual and collective risks, we are talking about context once again. In the network example, the context is one's network 'neighborhood', the collection of individuals one interacts with. In reasonably homogeneous networks, groups of individuals may share very similar or almost identitical network contexts. 
-
-Ultimately, the key element of context is *relatedness*: These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartities we see today.
-
-Making sense of the types of patterns we see in the real world requires us to first identify:
-
-1. A question we want or need to answer.
-2. The most important types of relationships impacting our outcome of interest (time, space, individual-to-individual).
-3. A methodological approach that will allow us to characterize the impact of those relationships on the outcome we care about. 
-
-It is important to note that the choice of method comes *last* here: A key motivation of this book is to sidestep the tendency to train ourselves into methodological hammers looking for data nails to whack away at. 
-
-In addition to this, there is no pre-supposition that the appropriate method is necessarily 'fancy' in the sense of being conceptually or mathematically complex, computationally intensive, or even primarily or at all quantitative in nature. Whether this is the case is entirely a function of what happens at the intersection between question, data, and theory. 
-
-## A book, not a cookbook
-
-> "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools." - Douglas Adams, Hitchhikers Guide to the Galaxy
 
 ## Influences
 

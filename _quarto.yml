@@ -6,7 +6,7 @@ format:
   pdf: default
 
 book:
-  title: "Field Guide of Contextual and Relational Epidemiology"
+  title: "Field Guide of Relational and Contextual Epidemiology"
   author: "Jon Zelner"
   date: "9/8/2023"
   chapters:
@@ -14,13 +14,21 @@ book:
       chapters:
         - index.qmd
         - invitation.qmd
+        - elements.qmd
+        - laws.qmd
     - part: relationships.qmd
       chapters:
-        - space.qmd
-        - time.qmd
-        - people.qmd
-  
+        - social.qmd
+        - spatial.qmd
+        - temporal.qmd
+    - part: methods.qmd
+      chapters:
+        - smoothing.qmd
+        - density.qmd
+
 
 number-depth: 1
 bibliography: contextual-epi.bib
 csl: american-journal-of-epidemiology.csl
+execute:
+  cache: true
