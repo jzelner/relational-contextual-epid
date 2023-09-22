@@ -1,4 +1,4 @@
-# What are the elements of relational epidemiology? {#sec-elements}
+# What are the elements of relational and systems epidemiology? {#sec-elements}
 
 I arrived at the idea of relational epidemiology as an umbrella category from spatial and hierarchical analysis. The stereotypical challenge in this setting is to adjust away the impact of context to get at some more generally meaningful parameter estimate, e.g. a treatment effect. But another way of thinking about this is that the hard work is in characterizing not only the 'main' or fixed effects, but in capturing the drivers of variability in outcomes across locations.
 

@@ -1,0 +1,13 @@
+# Systems Epidemiology
+
+In the context of this book, a systems approach to epidemiology refers not only to systems *methods* but a systems *orientation*. But what does that mean?
+
+Often, in public health and epidemiology, our focus is on an outcome of interest such as the incidence of a particular disease, the rate of death following infection with a particular pathogen or a cancer diagnosis, or some other well-defined, clearly-specified endpoint. Obviously, we do this for a good reason: We care about preventing or treating these specific outcomes, and we couldn't do a very good job of measuring risk and assessing intervention impact without thinking in these specific terms.
+
+So, while we should care about enumerating and addressing these specific outcomes, the systems that generate them are not *sui generis*, i.e. they do not impact only one health or disease outcome at a time. Orienting towards systems means giving them the sort of in-depth attention we give to the outcomes. This approach pays enormous dividends: When we start from understanding a social or environmental system - for example, structural racism or anthropogenic climate change - that impacts multiple health outcomes, we are able to increase our overall health impact by intervening further up the causal chain. 
+
+Another thing that happens when we move away from outcome orientation is that we are forced to reckon with relationships and feedback loops in a more comprehensive way. This is because if we care about the behavior of the epidemiologic system, we care about how it changes over time, how it responds to different attempts to alter its behavior, and on and on. By contrast, an outcome is by definition an endpoint. When we take responsibility for characterizing and addressing the system, each outcome is a realization of a *process* of interest, and another piece of information that gives us a clue about how the system generating these outcomes behaves.
+
+We have a tendency to conflate specific orientations with specific analytic methods: If we care about systems, then we must use dynamic models or network methods. While these tools may be more likely to show up in system-oriented analyses than in outcome-oriented ones, I would like to take this opportunity to reject this idea uncategorically. Methods are just tools of measurement and summarization that help us understand what is going on. They are important, but they are tools and they are often interchangeable. The important thing is, as it always has been, our very human ability to conceptualize and abstract away the key elements of the system of interest. The tools then let us express this understanding to others and to challenge and refine our assumptions about how it works. 
+
+

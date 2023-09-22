@@ -1,0 +1,29 @@
+# Segregation
+
+There are not many topics that illustrate the relational perspective on health and illness as well as residential racial and socioeconomic segregation. 
+
+
+## Dimensions of Segregation
+
+Residential segregaton generally refers to the physical separation of different groups as a function of their race, ethnicity, religion, income, or some combination of these factors. In addition to being a persistent and ever-present feature of unequal societies, it touches on every component of the relational toolbox. 
+
+### Space
+
+Space is the most common lens through which we tend to approach the concept of segregation: Classic notions of segregation focus on the intensity and scale of separation between groups. In the United States, these conversations often focus on the physical separation of Blacks from Whites in cities such as Chicago and New York. But this pattern has been documented around the world and often takes the form of separation by ethnicity or religion as well [@susewind2017].
+
+The spatial aspects of segregation may impact health outcomes through their effects on accessibility to healthcare, the quality of the neighborhood environment (e.g. access to parks and other forms of green space), the presence of crime and other factors that lead to a diminished sense of safety, and on and on. These effects of segregation are perhaps the most palpable and tangible, but as we will see, to truly understand and address residential segregation we need to grasp its other dimensions. 
+
+### Time
+
+The impacts of segregation can be viewed through multiple temporal lenses. For example, much historical work has documented the ways in which patterns of redlining, which denied mortgages and home insurance to Blacks and other non-White home buyers in the U.S., entrenched the patterns of racial residential segregation we still see in many cities in the present day. 
+
+Other work has looked specifically at segregation as a life-course exposure, with effects that may manifest in later life among people exposed even as children [@kershaw2017].
+
+### Social
+
+While it is most common to conceptualize segregation as a social process with an overt spatial manifestation, much research has complicated this picture. While a spaital perspective may reveal a lot about the underlying processes, a perspective focused at the level of individuals and groups  reveals how segregation and its impacts play out through the sorting of individuals into occupations and social groups which then interact with each other in ways that reinforce hierarchies that drive deleterious health outcomes. 
+
+The social impacts of segregation may also manifest in what the sociologist Loïc Wacquant has referred to as "territorial stigmatization"  [@wacquant2007] in which a place's reputation is used to stigmatize its residence. In the context of the COVID-19 pandemic, Chowkwanyun and Reed [@chowkwanyun2020] invoked this idea to sound a note of caution on spatial analyses of disease outcomes, suggesting that analyses that fuse place and disease together without appropriate attention to the structural drivers of these relationships may actually reinforce the social inequities they are intended to highlight and ameliorate.
+
+## References {.unnumbered}
+

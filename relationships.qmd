@@ -3,6 +3,16 @@ title: "Relationships"
 format: html
 ---
 
-# Space, time, and network
+# Space, time, and network: Three perspectives on the same relationships
+
+When working on relational problems, there is sometimes a tendency to mistake the frame or perspective we are taking on a given problem for the real thing. This pitfall is exemplified by the phrase "the map is not the territory": While some kind of abstraction or representation is always necessary, it is imperative to remember that it is always a proxy for the phenomenon under study.
+
+For example, consider what we are doing when we say that an individual's risk of infection declines with distance from the nearest case of that infection. Buried in the shape and intensity of the spatial autocorrelation function is the way interaction occurs between people over time. Those interactions may be purely a function of physical distance, i.e. I am less likely to bump into someone who lives far away from me than a neighbor, but may also reflect elements of 'social space'. For example, certain forms of racial residential segregation may result in individuals of different racial identities living in very close proximity to each other but still having very limited or circumscribed contact with each other.
+
+For example, in the excellent book *Infectious Fear* [@roberts2009], the medical historian Samuel Kelton Roberts illustrates how the residential segregation of near-South cities like Washington D.C. and Baltimore was manifest in a configuration in which White families lived in the row houses facing the street, while their Black servants lived in smaller, more-cramped quarters facing the alleys behind the homes of the more-privileged and well-off Whites. (For an example of this living configuration, see @fig-alley-house.) In many cases these homes would share an adjoining wall, but the risks of acquiring and dying from infections like Tuberculosis associated with living in them were vastly different. 
+
+![Example of row-house/alley-house segregation in Washington D.C. from @logan2017a](relationships/logan_alley_segregation.png){#fig-alley-house}
+
+In this case, a quantitative analysis that conflated spatial distance with social similarity and disease-transmitting contact leading to similar health outcomes would go badly astray. In the end, there are no universal meanings we can attribute to the geographic or temporal distances between events, and the formalisms we use to represent them are only as good as our ability to understand the social, environmental and historical context of the places we are looking at.
 
 ## References {.unnumbered}
