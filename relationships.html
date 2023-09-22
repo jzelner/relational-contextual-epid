@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Field Guide of Relational and Contextual Epidemiology - Relationships</title>
+<title>Field Guide to Relational and Systems Epidemiology - Relationships</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./social.html" rel="next">
-<link href="./laws.html" rel="prev">
+<link href="./segregation/index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Field Guide of Relational and Contextual Epidemiology</a> 
+      <a href="./">Field Guide to Relational and Systems Epidemiology</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -123,13 +142,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./elements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What are the elements of relational epidemiology?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What are the elements of relational and systems epidemiology?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./laws.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Some laws of relational and contextual epidemiology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Systems Epidemiology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./segregation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Segregation</span></span></a>
   </div>
 </li>
       </ul>
@@ -146,19 +177,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./social.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Social</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Social</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./spatial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Spatial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Spatial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./temporal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Temporal</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Temporal</span></span></a>
   </div>
 </li>
       </ul>
@@ -175,25 +206,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./smoothing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Codifying Tobler’s First Law using Locally Weighted Regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Codifying Tobler’s First Law using Locally Weighted Regression</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./density.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Spatial Density</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spatial Density</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./radon-multilevel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Household Radon</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Household Radon</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./spatial-radon.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Taking a spatial perspective on the <code>radon</code> data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Taking a spatial perspective on the <code>radon</code> data</span></span></a>
   </div>
 </li>
       </ul>
@@ -208,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#space-time-and-network" id="toc-space-time-and-network" class="nav-link active" data-scroll-target="#space-time-and-network">Space, time, and network</a>
+  <li><a href="#space-time-and-network-three-perspectives-on-the-same-relationships" id="toc-space-time-and-network-three-perspectives-on-the-same-relationships" class="nav-link active" data-scroll-target="#space-time-and-network-three-perspectives-on-the-same-relationships">Space, time, and network: Three perspectives on the same relationships</a>
   <ul class="collapse">
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
@@ -235,12 +266,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="space-time-and-network" class="level1">
-<h1>Space, time, and network</h1>
+<section id="space-time-and-network-three-perspectives-on-the-same-relationships" class="level1">
+<h1>Space, time, and network: Three perspectives on the same relationships</h1>
+<p>When working on relational problems, there is sometimes a tendency to mistake the frame or perspective we are taking on a given problem for the real thing. This pitfall is exemplified by the phrase “the map is not the territory”: While some kind of abstraction or representation is always necessary, it is imperative to remember that it is always a proxy for the phenomenon under study.</p>
+<p>For example, consider what we are doing when we say that an individual’s risk of infection declines with distance from the nearest case of that infection. Buried in the shape and intensity of the spatial autocorrelation function is the way interaction occurs between people over time. Those interactions may be purely a function of physical distance, i.e.&nbsp;I am less likely to bump into someone who lives far away from me than a neighbor, but may also reflect elements of ‘social space’. For example, certain forms of racial residential segregation may result in individuals of different racial identities living in very close proximity to each other but still having very limited or circumscribed contact with each other.</p>
+<p>For example, in the excellent book <em>Infectious Fear</em> <span class="citation" data-cites="roberts2009">(<a href="#ref-roberts2009" role="doc-biblioref">1</a>)</span>, the medical historian Samuel Kelton Roberts illustrates how the residential segregation of near-South cities like Washington D.C. and Baltimore was manifest in a configuration in which White families lived in the row houses facing the street, while their Black servants lived in smaller, more-cramped quarters facing the alleys behind the homes of the more-privileged and well-off Whites. (For an example of this living configuration, see <a href="#fig-alley-house">Figure&nbsp;<span>1.1</span></a>.) In many cases these homes would share an adjoining wall, but the risks of acquiring and dying from infections like Tuberculosis associated with living in them were vastly different.</p>
+<div id="fig-alley-house" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="relationships/logan_alley_segregation.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1.1: Example of row-house/alley-house segregation in Washington D.C. from <span class="citation" data-cites="logan2017a">(<a href="#ref-logan2017a" role="doc-biblioref">2</a>)</span></figcaption>
+</figure>
+</div>
+<p>In this case, a quantitative analysis that conflated spatial distance with social similarity and disease-transmitting contact leading to similar health outcomes would go badly astray. In the end, there are no universal meanings we can attribute to the geographic or temporal distances between events, and the formalisms we use to represent them are only as good as our ability to understand the social, environmental and historical context of the places we are looking at.</p>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-roberts2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Roberts SK. Infectious <span>Fear</span>: <span>Politics</span>, <span>Disease</span>, and the <span>Health Effects</span> of <span>Segregation</span>. <span>University of North Carolina Press</span>; 2009.</div>
+</div>
+<div id="ref-logan2017a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Logan J. <a href="https://doi.org/10.4054/DemRes.2017.36.57">Racial segregation in postbellum <span>Southern</span> cities: <span>The</span> case of <span>Washington</span>, <span>D</span>.<span>C</span></a>. <em>Demographic Research</em>. 2017;36:1759–1784. </div>
+</div>
+</div>
 </section>
 </section>
 
@@ -480,13 +529,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./laws.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Some laws of relational and contextual epidemiology</span></span>
+      <a href="./segregation/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Segregation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./social.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Social</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Social</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
