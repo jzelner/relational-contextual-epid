@@ -15,6 +15,7 @@ book:
         - index.qmd
         - invitation.qmd
         - elements.qmd
+        - philosophy.qmd
         - laws.qmd
         - relationships.qmd
     - part: Residential Segregation
