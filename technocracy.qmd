@@ -1,9 +1,0 @@
-# Technology without technocracy?
-
-## Technosolutionism
-
-Michael et al. [[@michael2020]] outline some of the challenges to using apps and other technological solutions to "manufacture consent", i.e. to get people to participate in the kinds of behaviors that are needed to slow the pace of the pandemic. What this piece doesn't quite get at is that what is needed instead are broad-scale structural changes that such apps cannot possibly help to address.
-
-## When we *have* to use data, we may just use out-of-date or inappropriate data
-
-If we consider COVID relief payments to be part of the public health response - which is a reasonable supposition - then the reliance on 2019 tax return income to measure eligibility for relief payments also falls into the box of technocratic solutions to public health problems, and is a good example of the reliance on data even when those data are either misaligned with reality or whose alignment is uncertain [@ncsl2021].

@@ -1,9 +1,9 @@
 ---
-title: "Relationships"
+title: "Relationships that matter"
 format: html
 ---
 
-# Space, time, and network: Three perspectives on the same relationships
+# Space, time, and network: Multiple views of the the same systems
 
 When working on relational problems, there is sometimes a tendency to mistake the frame or perspective we are taking on a given problem for the real thing. This pitfall is exemplified by the phrase "the map is not the territory": While some kind of abstraction or representation is always necessary, it is imperative to remember that it is always a proxy for the phenomenon under study.
 
@@ -14,5 +14,34 @@ For example, in the excellent book *Infectious Fear* [@roberts2009], the medical
 ![Example of row-house/alley-house segregation in Washington D.C. from @logan2017a](relationships/logan_alley_segregation.png){#fig-alley-house}
 
 In this case, a quantitative analysis that conflated spatial distance with social similarity and disease-transmitting contact leading to similar health outcomes would go badly astray. In the end, there are no universal meanings we can attribute to the geographic or temporal distances between events, and the formalisms we use to represent them are only as good as our ability to understand the social, environmental and historical context of the places we are looking at.
+
+## Spatial
+
+Please read the following two pieces that discuss key ideas about geospatial relatedness:
+
+Miller HJ. Tobler’s First Law and Spatial Analysis. _Annals of the Association of American Geographers_. 2004;94(2):284-289. doi:[10.1111/j.1467-8306.2004.09402005.x](https://doi.org/10.1111/j.1467-8306.2004.09402005.x)
+
+Goodchild MF. The Validity and Usefulness of Laws in Geographic Information Science and Geography. _Annals of the Association of American Geographers_. 2004;94(2):300-303. doi:[10.1111/j.1467-8306.2004.09402008.x](https://doi.org/10.1111/j.1467-8306.2004.09402008.x)
+
+### Physical Space
+
+### Social Space
+
+## Temporal 
+
+### Short-term correlation and fluctuation
+
+
+### Time series
+
+### History
+
+## Networks
+
+### Social Stratification & Inequality
+
+### Social Networks
+
+
 
 ## References {.unnumbered}

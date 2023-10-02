@@ -6,10 +6,21 @@ But not every contextual question is strictly spatial: If we care about how the 
 
 Ultimately, the key to understanding context is *relatedness*: Individuals sharing a context are likely to have similar relationships to their physical environment, the societies they are a part of, and potentially to each other, than those not sharing the same context.  These relationships may be micro-level social relationships or macro-scale spatial ones, but they may also be temporal in nature. Temporal relationships may occur at a micro scale, e.g. the rise or fall in incidence of an infectious disease during a given week is likely to be a function of the prevalence of that same disease in the previous week. But these temporal relationships are also often more macro-scale and historical in nature: The long history of racial residential discrimination in the United States is undoubtedly a driver of many racial health dispartities we see today.
 
+## Systems Epidemiology
+
+In the context of this book, a systems approach to epidemiology refers not only to systems *methods* but a systems *orientation*. But what does that mean?
+
+Often, in public health and epidemiology, our focus is on an outcome of interest such as the incidence of a particular disease, the rate of death following infection with a particular pathogen or a cancer diagnosis, or some other well-defined, clearly-specified endpoint. Obviously, we do this for a good reason: We care about preventing or treating these specific outcomes, and we couldn't do a very good job of measuring risk and assessing intervention impact without thinking in these specific terms.
+
+So, while we should care about enumerating and addressing these specific outcomes, the systems that generate them are not *sui generis*, i.e. they do not impact only one health or disease outcome at a time. Orienting towards systems means giving them the sort of in-depth attention we give to the outcomes. This approach pays enormous dividends: When we start from understanding a social or environmental system - for example, structural racism or anthropogenic climate change - that impacts multiple health outcomes, we are able to increase our overall health impact by intervening further up the causal chain. 
+
+Another thing that happens when we move away from outcome orientation is that we are forced to reckon with relationships and feedback loops in a more comprehensive way. This is because if we care about the behavior of the epidemiologic system, we care about how it changes over time, how it responds to different attempts to alter its behavior, and on and on. By contrast, an outcome is by definition an endpoint. When we take responsibility for characterizing and addressing the system, each outcome is a realization of a *process* of interest, and another piece of information that gives us a clue about how the system generating these outcomes behaves.
+
+We have a tendency to conflate specific orientations with specific analytic methods: If we care about systems, then we must use dynamic models or network methods. While these tools may be more likely to show up in system-oriented analyses than in outcome-oriented ones, I would like to take this opportunity to reject this idea uncategorically. Methods are just tools of measurement and summarization that help us understand what is going on. They are important, but they are tools and they are often interchangeable. The important thing is, as it always has been, our very human ability to conceptualize and abstract away the key elements of the system of interest. The tools then let us express this understanding to others and to challenge and refine our assumptions about how it works. 
+
 ## Problem-orientation is nonnegotiable
 
 > "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools." - Douglas Adams, Hitchhikers Guide to the Galaxy.
-
 
 Sometimes, methods-y topics in epidemiology and public health are boiled down to a sequence of steps to be applied to each new problem. In the worst cases, they come to us as a series of copy-paste, plug-and-chug pieces of code to be reused each time the same type of problem is encountered. 
 
@@ -30,3 +41,7 @@ Making sense of the types of patterns we see in the real world requires us to fi
 It is important to note that the choice of method comes *last* here: A key motivation of this book is to sidestep the tendency to train ourselves into methodological hammers looking for data nails to whack away at. 
 
 In addition to this, there is no pre-supposition that the appropriate method is necessarily 'fancy' in the sense of being conceptually or mathematically complex, computationally intensive, or even primarily or at all quantitative in nature. Whether this is the case is entirely a function of what happens at the intersection between question, data, and theory. 
+
+- This seems totally in line with some of the ideas on extensive and intensive research in [@sayer2010] and [@dunn2012]
+
+# References {.unnumbered}

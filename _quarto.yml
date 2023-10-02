@@ -16,19 +16,17 @@ book:
         - invitation.qmd
         - elements.qmd
         - laws.qmd
-        - systems/index.qmd
+        - relationships.qmd
+    - part: Residential Segregation
+      chapters: 
         - segregation/index.qmd
-    - part: relationships.qmd
-      chapters:
-        - social.qmd
-        - spatial.qmd
-        - temporal.qmd
-    - part: methods.qmd
+    - part: Environmental Exposure
       chapters:
         - smoothing.qmd
         - density.qmd
         - radon-multilevel.qmd
         - spatial-radon.qmd
+
 
 
 number-depth: 2
