@@ -1,1 +1,14 @@
 # Some laws of relational and contextual epidemiology {#sec-laws}
+
+In 1970, the geographer Waldo Tobler coined what is often referred to as Tobler's first law (TFL), which states that "[e]verything is related to everything else, but near things are more related than distant things" [@tobler1970]. On a first read, this can come across as a truism, and it might even feel obvious and shallow. 
+
+But I would argue that this notion of the role of 'nearness' and 'farness' in shaping the similarity of  outcomes is really the heart of a contextual approach to epidemiology. Tobler was speaking specifically about geographic distance when he made this statement. Specifically, he was referring to the way human populations were distributed in space, observing that their composition and density were spatially related, with nearby neighborhoods more similar to each other than distant ones. Since Tobler wrote, others have generalized TFL to a more generic notion of nearness or farness across different types of space. 
+Applying this and related concepts to a broader swathe of relationships is what it means to conduct relational or contextual epidemiology. The concept is very easy to translate to historical or temporal analysis: The concept of temporal autocorrelation is at the heart of time-series analysis. Simply put, this is just the idea that events separated by less time are more likely to be similar - on average - than those separated by longer periods of time. In the domain of social networks, TFL comes into play when we think about the notion of *homophily*, i.e. that "birds of a feather flock together" [@goodreau2009]. 
+
+## What does closeness *do*?
+
+Miller [@miller2004] specifically draws on systems theory to argue that the very simple concept of nearness is enough to explain complex geographic phenomena including natural ecosystems and economies, because it is not the nearness that does the 'doing' but that interaction between dynamic components is more likely over short spatial, temporal, or social distances than over longer ones. 
+
+- No similarity without variability (i.e. the real first law according to Goodchild [@goodchild2004])
+
+But applying this and related concepts to a broader swathe of relationships is what it means to conduct relational or contextual epidemiology. The concept is very easy to translate to historical or temporal analysis: The concept of temporal autocorrelation is at the heart of time-series analysis. Simply put, this is just the idea that events separated by less time are more likely to be similar - on average - than those separated by longer periods of time. In the domain of social networks, TFL comes into play when we think about the notion of *homophily*, i.e. that "birds of a feather flock together" [@goodreau2009]. 
