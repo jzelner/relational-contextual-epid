@@ -42,7 +42,7 @@ makeSquareGrid <- function(D) {
 
 
 ```{r}
-overlappingRiskGrid <- function(D, N, alpha = 1, tl = 2.0, center = 2.0) {
+overlappingRiskGrid <- function(D, N, alpha = 1, bl_rr = 2.0, center_rr = 2.0) {
   grid_df <- makeSquareGrid(D)
 
   grid_df$N <- N
@@ -50,15 +50,6 @@ overlappingRiskGrid <- function(D, N, alpha = 1, tl = 2.0, center = 2.0) {
   ## This is the background, per-capita rate in each
   ## cell of our city
   baseline_per_capita <- alpha
-
-  ## This is the relative risk of the outcome for individuals
-  ## in the top-left qudrant
-  top_left_rr <- tl
-
-  ## This is the relative risk of the outcome for
-  ## individuals living towards the center of the
-  ## simulated city
-  center_rr <- center
 
   ## Here, we initialize a variable for the per-capita rate
   ## within each cell
@@ -69,20 +60,21 @@ overlappingRiskGrid <- function(D, N, alpha = 1, tl = 2.0, center = 2.0) {
   center_low_xy <- round(D / 2) - 2
   center_high_xy <- round(D / 2) + 2
 
-  ## This is just filling in the per-capita rates for each cell
+  ## This is filling in the per-capita rates for each cell
   ## as a function of where they are on the grid (assuming a 10 x 10 grid)
   grid_df <- grid_df %>%
-    mutate(rate = case_when(between(X, 1, 4) & between(Y, 1, 4) ~ baseline_per_capita * top_left_rr,
-      .default = baseline_per_capita
-    )) %>%
-    mutate(rate = case_when(between(X, center_low_xy, center_high_xy) & between(Y, center_low_xy, center_high_xy) ~ rate * center_rr,
-      .default = rate
-    ))
+    mutate(bl = case_when(between(X, 1, 4) & between(Y, 1, 4) ~ 1, #<1>
+      .default = 0 #<1>
+    )) %>% #<1>
+    mutate(center = case_when(between(X, center_low_xy, center_high_xy) & between(Y, center_low_xy, center_high_xy) ~ 1, #<2>
+      .default = 0 #<2>
+    )) %>% #<2>
+      mutate(rate = exp(log(alpha) + log(center_rr)*center + log(bl_rr)*bl)) #<3>
 
   ## Now we can also draw the number of cases observed in
-  ## each grid cell
-  grid_df <- grid_df %>%
-    mutate(p_disease = 1 - exp(-rate / N))
+  ## each grid celll
+  grid_df <- grid_df %>% #<4>
+    mutate(p_disease = 1 - exp(-rate / N)) #<4>
 
   ## Simulate the observed number of cases in each cell
   ## as a function of the population size (N) and probability of diseaw
@@ -91,6 +83,10 @@ overlappingRiskGrid <- function(D, N, alpha = 1, tl = 2.0, center = 2.0) {
   return(grid_df)
 }
 ```
+1. Create a binary indicator variable designating whether a cell is in the center hot or cold spot.
+2. Create a binary indicator variable designating whether a cell is in the bottom-left hot or cold spot.
+3. Calculate the total rate at location $i$ as the sum of the logged relative risks multipled by binary indicators. 
+4. Convert this continuous rate to a probability using the exponential cumulative distribution function. 
 
 ## Simulate input data
 
