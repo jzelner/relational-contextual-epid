@@ -1,0 +1,210 @@
+---
+execute:
+  warning: false
+---
+
+# Clustering!
+ 
+## Loading Packages
+
+```{r, setup}
+library(tidyverse)
+library(spdep)
+```
+
+## Some helpful functions
+```{r}
+makeSquareGrid <- function(D) {
+  
+
+  x_coords <- 1:D
+  y_coords <- 1:D
+
+## The expand.grid function creates a data frame
+## with all possible combinations of the 
+## input elements
+  grid_df <- expand.grid(x_coords, y_coords)
+
+## Set the variable names
+colnames(grid_df) <- c("X","Y")
+
+## Each cell also gets a unique ID from 1:D^2
+grid_df$cellID <- 1:nrow(grid_df)
+
+return(grid_df)
+}
+
+```
+
+
+
+```{r}
+kNearestNeighborsList <- function(df, k) {
+  xy <- df %>% 
+  select(X,Y)
+
+kNeighbors <- knearneigh(xy, k = k)$nn %>%
+  data.frame()
+
+kNeighbors$cellID <- 1:nrow(kNeighbors)
+
+neighborsList <- kNeighbors %>% 
+  pivot_longer(cols = !matches("cellID"), names_to = NULL, values_to = "neighborID") %>%
+  arrange(cellID, neighborID)
+
+return(neighborsList)
+}
+
+overlappingRiskGrid <- function(D, N, alpha = 1, tl = 2.0, center = 2.0) {
+  
+grid_df <- makeSquareGrid(D)
+
+grid_df$N <- N
+  
+## This is the background, per-capita rate in each 
+## cell of our city
+baseline_per_capita <- alpha
+
+## This is the relative risk of the outcome for individuals
+## in the top-left qudrant
+top_left_rr <- tl
+
+## This is the relative risk of the outcome for 
+## individuals living towards the center of the
+## simulated city
+center_rr <- center
+
+## Here, we initialize a variable for the per-capita rate
+## within each cell
+grid_df$rate <- 0
+
+## Make the middle risk area 4 x 4 and the top-left area also 4x4
+
+center_low_xy <- round(D/2)-2
+center_high_xy <- round(D/2)+2
+
+## This is just filling in the per-capita rates for each cell
+## as a function of where they are on the grid (assuming a 10 x 10 grid)
+grid_df <- grid_df %>%
+    mutate(rate = case_when( between(X,1,4) & between(Y,1,4) ~ baseline_per_capita*top_left_rr,
+    .default = baseline_per_capita)) %>%
+        mutate(rate = case_when(between(X,center_low_xy,center_high_xy)&between(Y,center_low_xy,center_high_xy) ~ rate*center_rr,
+        .default = rate))
+
+## Now we can also draw the number of cases observed in 
+## each grid cell
+grid_df <- grid_df %>%
+  mutate(p_disease = 1-exp(-rate/N))
+
+## Simulate the observed number of cases in each cell
+## as a function of the population size (N) and probability of diseaw
+grid_df$numCases <- rbinom(nrow(grid_df), grid_df$N, grid_df$p_disease)
+
+return(grid_df)
+}
+
+
+```
+
+## Simulate input data
+
+```{r}
+D <- 10
+cityData <- overlappingRiskGrid(D, 100, 5, 10, 0.5)
+cityDataLong <- cityData %>% 
+  pivot_longer(c(rate, numCases))
+
+g <- ggplot(cityDataLong) + 
+    geom_tile(aes(x = X, y = Y, fill = value),colour = "black") + 
+  coord_equal() +
+  facet_wrap(~ name) +
+  scale_fill_viridis_c()
+
+plot(g)
+
+```
+
+### Exercises
+
+1. Try expanding the dimension of the grid to get a sense of the overall patterns.
+
+2. Vary the size of the population in each cell to see how that impacts the difference between the simulated counts and underlying rates.
+
+3. Visualize the counts and rates as a histogram. Does this provide any insight you don't get from the spatial representation?
+
+## Getis-Ord G* and Gi*
+
+
+
+$$
+G_i^* = \frac{\sum_j w_{ij} x_j}{\sum_j x_j}
+$$
+The code below shows how to calculate values of the local Getis-Ord Gi* statistic using a neighbor list constructed using `spdep` functions:
+
+```{r}
+gridNeighbors <- include.self(cell2nb(D,D, type="queen", torus = FALSE))
+
+nbw <- nb2listw(gridNeighbors, style = "B")
+
+num_loc <- length(nbw$neighbours)
+
+gi_vals <- rep(0, num_loc)
+totalCases <- sum(cityData$numCases)
+for (i in 1:num_loc) {
+  neighborIndices <-nbw$neighbours[[i]]
+  numNeighbors <- length(neighborIndices)
+  weights <- nbw$weights[[i]]
+  gi_vals[[i]] <- sum(neighborIndices*cityData$numCases[neighborIndices]*weights)/totalCases
+}
+
+cityData$giStar <- gi_vals
+
+g <- ggplot(cityData) + 
+    geom_tile(aes(x = X, y = Y, fill = giStar),colour = "black") + 
+  coord_equal() +
+  scale_fill_viridis_c()
+
+plot(g)
+```
+
+### Exercises
+
+1. Change the underlying rates in the model and relative risks. How does this appear to change the values of the Gi* stat?
+
+2. Which values of Gi* in the maps you generate reflect a 'real' cluster (based on the input parameters) and which might be artifacts of random sampling? 
+
+3. Change the way neighbors are calculated from queen to rook's adjacency. What happens? Does this effect seem more pronounced under different input datasets? Why?
+
+## Calculate Getis-Ord Gi* for simulated data using `spdep`
+
+```{r}
+gridNeighbors <- include.self(cell2nb(D,D, type="queen", torus = FALSE))
+xyc <- attr(gridNeighbors, "region.id")
+
+## Extracts the x,y coords of each cell
+xy <- matrix(as.integer(unlist(strsplit(xyc, ":"))), ncol=2, byrow=TRUE) 
+
+xy <- data.frame(x = xy[,1], y = xy[,2])
+
+gridNeighborList <- nb2listw(gridNeighbors, zero.policy=TRUE, style="B")
+
+localGEst <- localG(cityData$numCases, gridNeighborList)
+
+cityData$cluster <- attr(localGEst, "cluster")
+cityData$gScore <- as.vector(localGEst) 
+cityData$sig <- as.numeric(abs(as.vector(localGEst)) > 3.2)
+```
+
+## Plot labeled outcomes
+
+```{r}
+g <- ggplot(cityData, aes(x=X,y=Y)) +
+    geom_tile(aes(fill = gScore)) +
+    geom_text(aes(label = sig), color = "white") + 
+    coord_equal() +
+    scale_fill_viridis_c()
+
+plot(g)
+```
+
+

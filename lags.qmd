@@ -1,0 +1,123 @@
+---
+format: html
+---
+
+# Matrices
+
+It is basically impossible to talk about spatial relationships without using the language of linear algebra, particularly matrices and vectors. In the simplest case, we can represent the world as a square grid, like we see in #ref(<grid>). In this case, the cells of the grid map directly onto the rows and columns of the matrix representing it. But even when our data are not easily represented in space by a grid, we will often still think about them in matrix terms.
+
+```{r}
+#| echo: false
+#| warning: false 
+require(ggplot2)
+require(dplyr)
+df <- expand.grid(i = 1:3, j = 1:3) %>%
+    arrange(desc(j),i)
+df$id <- 1:nrow(df)
+
+g <- ggplot(df) + 
+    geom_tile(aes(x = j, y = i), fill = "white", colour = "black") +
+    coord_equal() +
+    theme(axis.text.x=element_blank(), 
+      axis.ticks.x=element_blank(), 
+      axis.text.y=element_blank(), 
+      axis.ticks.y=element_blank(), 
+      axis.title = element_blank(),
+      panel.grid = element_blank(),
+      panel.background = element_blank() 
+      ) + 
+        geom_text(aes(x = i, y = j, label = id))
+
+plot(g)
+
+```
+
+<!-- #figure(
+  table(
+    columns: (50pt, 50pt, 50pt),
+    rows: (50pt, 50pt, 50pt),
+    [i = 1], [2], [3],
+    [4], [5], [6],
+    [7], [8], [9],
+  ),
+  caption: [A simple 3 x 3 grid with 9 cells indexed by $i$],
+) <grid> -->
+
+
+## Matrix Notation
+
+- When we talk about a matrix, we label it using a bold, capital letter, e.g. $\mathbf{A}$ is an adjacency matrix.
+
+- When we talk about a _vector_, we will utilize the convention of referring to it using a bold lowercase letter, i.e. $\mathbf(a)$ could be a vector representing one of the columns of $bold(A).$
+
+- Finally, when we refer to the elements of a matrix or vector, we will use a lowercase letter with the appropriate index in subscript, i.e. $a_i$ is the i-th element of $\mathbf{A}$
+
+
+
+## Indices
+
+When indexing locations or individuals, we will start with $i$. The simple grid in #ref(<grid>) shows a scenario in which locations are indexed by $i$.
+The set of locations in  can be represented by $\mathbf{Z}$, with each location $i \in \mathbf{Z}$.
+
+When looking at relationships between locations, we may be interested in the (x,y) coordinates of a location. For this, we will adopt the 'row-major' order common in linear algebra, in which rows are indexed first by $i$ and columns by $j$. 
+
+<!-- #figure(
+  table(columns: (50pt, 50pt, 50pt), rows: (
+      50pt,
+      50pt,
+      50pt,
+    ))[i = 1 \ j = 1][i= 1 \ j=2][i = 1 \ j = 3][ i = 2 \ j = 1][i = 2 \ j = 2][i = 2 \ j = 3][i = 3 \ j = 1][i = 3 \ j = 2][ i = 3 \ j = 3],
+  caption: [A simple 3 x 3 grid with 9 cells indexed by $i$],
+) <grid-2> -->
+
+
+Sometimes, we will think about _nested_ data, i.e. individuals within locations. In this case, our indices will work upwards from the left, i.e. individual $i$ residing within location $j$.
+
+## Adjacency Matrices
+
+Often, we want to know who is next to whom, by whatever definition. The matrix in #ref(<eq:amat-rook>) is an example of a binary adjacency matrix#note([In a binary adjacency matrix, we have only 1 and 0 entries, i.e., you're a neighbor or you aren't.]) representing a Rooks' contiguity approach to neighborhoods in the matrix in #ref(<grid>).
+
+$$
+\mathbf{A} = \begin{bmatrix}
+0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 
+\end{bmatrix}
+$$
+
+
+In this setup, each row of $\mathbf{A}$ represents a location $i$ and the columns indicate whether $i$ and $j$ are neighbors, i.e. if $a_{i,j} = 1$. In this example, we assume that the matrix is symmetric, i.e. if $i$ is next to $j$, $j$ is next to $i$. But this may not always be the case.#note([We will sometimes refer to this as a weights matrix, $\mathbf{W}$ with elements $w_{ij}$]).
+
+== Spatial Lags
+
+One very useful property of adjacency matrices is that they can be used to calculate _spatial lags_, which are importantant for measuring spatial autocorrelation.
+
+Let's take a step back and think about the notion of a _lag_ term in a series of observations ordered in time, which we will denote by the vector $bold(y)$. If the elements of $bold(x)$ are ordered in time, we can define the value of $x_(t-1)$ as the lagged value of $x_t$. We could then use this set of relationships to estimate the first-order _autocorrelation function_, which is just the strength of relationships between observations at a given time and the ones immediately before them.
+
+Back in our two-dimensional spatial setting, we may want to compare the strength of the relationship between the value of an outcome at location $i$, denoted $x_i$, and the values of its neighbors as define dby some adjacency matrix, $bold(A)$.
+
+This is where the matrix-y-ness of the adjacency matrix comes in handy. We can multiply $bold(z) = bold(A dot x)$ to obtain the total value of $x$ for each location's neighbors.#note([So, $z_i$ would be the sum of the values in $bold(x)$ for the neighbors of $i$. ]) Just like in the temporal example, we can then use the output of this calculation to inform the strength of the relationship between the observed value $x_i$ at a particular location and its neighbors. #note([If this is confusing, it will begin to make more sense when we dive into some of the more commonly-used spatial statistics like Geti-Ord Gi\* and Moran's I in the coming weeks.  ])
+
+
+
+## Adjacency Lists
+
+The size of the adjacency matrix scales with the square of the number of locations. So in our 3x3 example, we have 9 total locations and 81 potential pairs of locations. In a 10x10 example, we have 100 locations, and 10,000 adjacency matrix entries! Most of the time, we have relatively _sparse_ adjancency matrices in which most people have a few relationships and the large majority of entries are 0.
+
+An alternative approach is to use what is known as an adjacency list representation, in which the indices of locations ($j$) that are neighbors of location $i$ are represented like we see in 
+
+#figure(
+  $
+    i = 1:& [2, 4] \
+    2:& [1, 3, 5]\
+    dots.v \
+    5:& [2,4,6,8] \
+    dots.v \
+    9:& [6,8]
+  $,
+  caption: [*Adjacency list* representation of Rook's contiguity relationships in #ref(<grid>).],
+) <adjlist>
+
+The adjacency list representation has the advantage of being compact and easier to inspect but without the ability to do straightforward matrix operations like we can with an adjacency matrix.
+

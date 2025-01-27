@@ -1,0 +1,209 @@
+---
+format:
+  html: 
+    code-tools: 
+      source: repo
+
+execute:
+  warning: false
+---
+
+# Finding Your Neighbors
+
+## Loading Packages
+ 
+```{r, setup}
+library(tidyverse)
+library(spdep)
+```
+
+## Setting up a simulated city with spatially varying risk
+
+## Constructing a grid
+
+```{r}
+
+makeSquareGrid <- function(D) {
+  
+
+  x_coords <- 1:D
+  y_coords <- 1:D
+
+## The expand.grid function creates a data frame
+## with all possible combinations of the 
+## input elements
+  grid_df <- expand.grid(x_coords, y_coords)
+
+## Set the variable names
+colnames(grid_df) <- c("X","Y")
+
+## Each cell also gets a unique ID from 1:D^2
+grid_df$cellID <- 1:nrow(grid_df)
+
+## Each cell has the same population
+grid_df$N <- 100
+
+return(grid_df)
+}
+
+D <- 10
+grid_df <- makeSquareGrid(D)
+
+```
+
+## Simulating risks by neighborhood zones
+
+
+```{r}
+
+## This is the background, per-capita rate in each 
+## cell of our city
+baseline_per_100 <- 1
+
+## This is the relative risk of the outcome for individuals
+## in the top-left qudrant
+top_left_rr <- 5
+
+
+## This is the relative risk of the outcome for 
+## individuals living towards the center of the
+## simulated city
+center_rr <- 0.25
+
+## Here, we initialize a variable for the per-capita rate
+## within each cell
+grid_df$rate <- 0
+
+## This is just filling in the per-capita rates for each cell
+## as a function of where they are on the grid (assuming a 10 x 10 grid)
+grid_df <- grid_df %>%
+    mutate(rate = case_when( (X <= 5) & (Y >= 5) ~ baseline_per_100*top_left_rr,
+    .default = baseline_per_100)) %>%
+        mutate(rate = case_when(between(X,3,7)&between(Y,3,7) ~ rate*center_rr,
+        .default = rate))
+
+## Now we can also draw the number of cases observed in 
+## each grid cell
+grid_df <- grid_df %>%
+  mutate(p_disease = 1-exp(-rate/N))
+
+## Simulate the observed number of cases in each cell
+## as a function of the population size (N) and probability of diseaw
+grid_df$numCases <- rbinom(nrow(grid_df), grid_df$N, grid_df$p_disease)
+
+
+```
+
+```{r}
+g <- ggplot(grid_df) + 
+    geom_tile(aes(x = X, y = Y, fill = numCases)) + 
+  coord_equal()
+plot(g)
+```
+
+## Exercises
+
+1. Plot the sampled number of cases in addition to the per-capita rate in each cell.  
+
+2. Change the baseline and spatial relative risks to higher or lower values. What happens to the agreement between the spatial patterning of the cases vs. the rates at very high rates vs. very low ones?
+
+# Finding Neighbors
+
+```{r}
+gridNeighbors <- cell2nb(D,D, type="queen", torus = FALSE)
+xyc <- attr(gridNeighbors, "region.id")
+
+## Extracts the x,y coords of each cell
+xy <- matrix(as.integer(unlist(strsplit(xyc, ":"))), ncol=2, byrow=TRUE) 
+
+xy <- data.frame(x = xy[,1], y = xy[,2])
+
+gridNeighborMatrix <- nb2mat(gridNeighbors, zero.policy=TRUE, style="B")
+
+gridNeighborCounts <- rowSums(gridNeighborMatrix)
+
+xy$numNeighbors <- gridNeighborCounts
+
+##print(gridNeighborMatrix[1:5, 1:10])
+```
+
+```{r}
+
+g <- ggplot(xy) + 
+    geom_tile(aes(x = x, y = y, fill = numNeighbors)) + 
+    scale_fill_viridis_c(limits = c(0,15)) + 
+  coord_equal()
+plot(g)
+
+```
+
+## Exercises
+
+1. Try changing the neighbor type to `queen` from rook. What happens to the number of neighbors for each cell?
+
+2. Look at the help file for the `nb2mat` function. Try one of the adjacency matrix styles other than `B` (binary). 
+3. What happens if you change the option `torus = TRUE`? Why?
+
+```{r}
+xy$totalRate <- gridNeighborMatrix %*% grid_df$rate / xy$numNeighbors
+```
+
+```{r}
+g <- ggplot(xy) + 
+    geom_tile(aes(x = x, y = y, fill = totalRate)) + 
+  coord_equal()
+plot(g)
+```
+
+## K Nearest Neighbors
+
+```{r}
+kNearestNeighborsList <- function(df, k) {
+  xy <- df %>% 
+  select(X,Y)
+
+kNeighbors <- knearneigh(xy, k = k)$nn %>%
+  data.frame()
+
+kNeighbors$cellID <- 1:nrow(kNeighbors)
+
+neighborsList <- kNeighbors %>% 
+  pivot_longer(cols = !matches("cellID"), names_to = NULL, values_to = "neighborID") %>%
+  arrange(cellID, neighborID)
+
+return(neighborsList)
+}
+
+k <- 10
+neighborsList <- kNearestNeighborsList(grid_df, k)
+
+print(neighborsList)
+```
+
+```{r}
+## This takes a data frame with pairs of cells and neighbors and brings in 
+## contextual information (number of cases, the per-capita rate) by cell.
+## It then 
+kNeighborsRates <- inner_join(neighborsList, grid_df,
+                              by = join_by(neighborID == cellID)
+                              ) %>% 
+  select(cellID, numCases, rate) %>%
+  group_by(cellID) %>%
+  summarize(avgRate = sum(numCases)/k) %>%
+  inner_join(select(grid_df, cellID, X, Y))
+
+print(kNeighborsRates)
+```
+
+```{r}
+g <- ggplot(kNeighborsRates) + 
+    geom_tile(aes(x = X, y = Y, fill = avgRate)) + 
+  coord_equal()
+plot(g)
+```
+
+### Additional Exercises
+
+1. Try different values of `k` and observe the impact that smaller or larger numbers of neighbors involved in the smoothing have on the image.
+
+2. Try this with the number of cases rather than the rates. What changes when the number of cases is relatively low due to sampling error?
