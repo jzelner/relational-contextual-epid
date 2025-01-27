@@ -149,7 +149,7 @@ totalCases <- sum(cityData$numCases) #<4>
 for (i in 1:num_loc) { #<5>
   neighborIndices <- nbw$neighbours[[i]] #<6>
   weights <- nbw$weights[[i]] #<7> 
-  gi_vals[[i]] <- sum(neighborIndices * cityData$numCases[neighborIndices] *
+  gi_vals[[i]] <- sum(cityData$numCases[neighborIndices] *
     weights) / totalCases #<8>
 }
 ```
