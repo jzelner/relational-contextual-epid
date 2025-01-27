@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.20">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Field Guide to Relational and Systems Epidemiology - 6&nbsp; Relationships that matter</title>
+<title>Field Guide to Relational and Systems Epidemiology – 2&nbsp; Autocorrelation Everywhere</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -49,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./segregation/index.html" rel="next">
-<link href="./laws.html" rel="prev">
+<link href="./model.html" rel="next">
+<link href="./introduction.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,6 +82,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -84,18 +92,18 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li><li class="breadcrumb-item"><a href="./relationships.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Relationships that matter</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduction.html">Foundations</a></li><li class="breadcrumb-item"><a href="./relationships.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Autocorrelation Everywhere</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -105,7 +113,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Field Guide to Relational and Systems Epidemiology</a> 
@@ -118,10 +126,22 @@ div.csl-indent {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fixing a Hole</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An invitation</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Foundations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -129,46 +149,46 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inspirations and Influences</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./invitation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">An invitation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./elements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What are the elements of relational and systems epidemiology?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./philosophy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophical Guideposts</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./laws.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Some laws of relational and contextual epidemiology</span></span></a>
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why relational and contextual epidemiology?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./relationships.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Relationships that matter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Autocorrelation Everywhere</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Why model?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lags.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Matrices</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./neighbors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Finding Your Neighbors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./getis-ord.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Clustering!</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Residential Segregation</span></a>
+            <a href="./problems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Relational Problems</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -177,7 +197,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./segregation/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Residential Segregation</span></span></a>
   </div>
 </li>
       </ul>
@@ -185,7 +205,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Environmental Exposure</span></a>
+ <span class="menu-text">Tools</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -194,25 +214,19 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./smoothing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Codifying Tobler’s First Law using Locally Weighted Regression</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./density.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Spatial Density</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Smoothing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./radon-multilevel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Household Radon</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Multi-level modeling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./spatial-radon.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Taking a spatial perspective on the <code>radon</code> data</span></span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
       </ul>
@@ -220,42 +234,33 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#space-time-and-network-multiple-views-of-the-the-same-systems" id="toc-space-time-and-network-multiple-views-of-the-the-same-systems" class="nav-link active" data-scroll-target="#space-time-and-network-multiple-views-of-the-the-same-systems"><span class="header-section-number">7</span> Space, time, and network: Multiple views of the the same systems</a>
+  <li><a href="#toblers-first-law" id="toc-toblers-first-law" class="nav-link active" data-scroll-target="#toblers-first-law"><span class="header-section-number">2.1</span> Tobler’s First Law</a>
   <ul class="collapse">
-  <li><a href="#spatial" id="toc-spatial" class="nav-link" data-scroll-target="#spatial"><span class="header-section-number">7.1</span> Spatial</a>
+  <li><a href="#similarity-is-meaningless-without-variation" id="toc-similarity-is-meaningless-without-variation" class="nav-link" data-scroll-target="#similarity-is-meaningless-without-variation">Similarity is meaningless without variation</a></li>
+  <li><a href="#why-negative-autocorrelation-matters" id="toc-why-negative-autocorrelation-matters" class="nav-link" data-scroll-target="#why-negative-autocorrelation-matters">Why negative autocorrelation matters</a></li>
+  </ul></li>
+  <li><a href="#how-does-autocorrelation-manifest-in-the-real-world" id="toc-how-does-autocorrelation-manifest-in-the-real-world" class="nav-link" data-scroll-target="#how-does-autocorrelation-manifest-in-the-real-world"><span class="header-section-number">2.2</span> How does autocorrelation manifest in the real world?</a>
   <ul class="collapse">
-  <li><a href="#physical-space" id="toc-physical-space" class="nav-link" data-scroll-target="#physical-space">Physical Space</a></li>
-  <li><a href="#social-space" id="toc-social-space" class="nav-link" data-scroll-target="#social-space">Social Space</a></li>
+  <li><a href="#spatial" id="toc-spatial" class="nav-link" data-scroll-target="#spatial">Spatial</a></li>
+  <li><a href="#social" id="toc-social" class="nav-link" data-scroll-target="#social">Social</a></li>
   </ul></li>
-  <li><a href="#temporal" id="toc-temporal" class="nav-link" data-scroll-target="#temporal"><span class="header-section-number">7.2</span> Temporal</a>
-  <ul class="collapse">
-  <li><a href="#short-term-correlation-and-fluctuation" id="toc-short-term-correlation-and-fluctuation" class="nav-link" data-scroll-target="#short-term-correlation-and-fluctuation">Short-term correlation and fluctuation</a></li>
-  <li><a href="#time-series" id="toc-time-series" class="nav-link" data-scroll-target="#time-series">Time series</a></li>
-  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history">History</a></li>
-  </ul></li>
-  <li><a href="#networks" id="toc-networks" class="nav-link" data-scroll-target="#networks"><span class="header-section-number">7.3</span> Networks</a>
-  <ul class="collapse">
-  <li><a href="#social-stratification-inequality" id="toc-social-stratification-inequality" class="nav-link" data-scroll-target="#social-stratification-inequality">Social Stratification &amp; Inequality</a></li>
-  <li><a href="#social-networks" id="toc-social-networks" class="nav-link" data-scroll-target="#social-networks">Social Networks</a></li>
-  </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
+  <li><a href="#nearness-farness-and-the-problem-of-scale" id="toc-nearness-farness-and-the-problem-of-scale" class="nav-link" data-scroll-target="#nearness-farness-and-the-problem-of-scale"><span class="header-section-number">2.3</span> Nearness, farness, and the problem of scale</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduction.html">Foundations</a></li><li class="breadcrumb-item"><a href="./relationships.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Autocorrelation Everywhere</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Relationships that matter</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Autocorrelation Everywhere</span></h1>
 </div>
 
 
@@ -268,67 +273,80 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<section id="space-time-and-network-multiple-views-of-the-the-same-systems" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Space, time, and network: Multiple views of the the same systems</h1>
-<p>When working on relational problems, there is sometimes a tendency to mistake the frame or perspective we are taking on a given problem for the real thing. This pitfall is exemplified by the phrase “the map is not the territory”: While some kind of abstraction or representation is always necessary, it is imperative to remember that it is always a proxy for the phenomenon under study.</p>
-<p>For example, consider what we are doing when we say that an individual’s risk of infection declines with distance from the nearest case of that infection. Buried in the shape and intensity of the spatial autocorrelation function is the way interaction occurs between people over time. Those interactions may be purely a function of physical distance, i.e.&nbsp;I am less likely to bump into someone who lives far away from me than a neighbor, but may also reflect elements of ‘social space’. For example, certain forms of racial residential segregation may result in individuals of different racial identities living in very close proximity to each other but still having very limited or circumscribed contact with each other.</p>
-<p>For example, in the excellent book <em>Infectious Fear</em> <span class="citation" data-cites="roberts2009">(<a href="#ref-roberts2009" role="doc-biblioref">1</a>)</span>, the medical historian Samuel Kelton Roberts illustrates how the residential segregation of near-South cities like Washington D.C. and Baltimore was manifest in a configuration in which White families lived in the row houses facing the street, while their Black servants lived in smaller, more-cramped quarters facing the alleys behind the homes of the more-privileged and well-off Whites. (For an example of this living configuration, see <a href="#fig-alley-house">Figure&nbsp;<span>7.1</span></a>.) In many cases these homes would share an adjoining wall, but the risks of acquiring and dying from infections like Tuberculosis associated with living in them were vastly different.</p>
-<div id="fig-alley-house" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="relationships/logan_alley_segregation.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.1: Example of row-house/alley-house segregation in Washington D.C. from <span class="citation" data-cites="logan2017a">(<a href="#ref-logan2017a" role="doc-biblioref">2</a>)</span></figcaption>
-</figure>
-</div>
-<p>In this case, a quantitative analysis that conflated spatial distance with social similarity and disease-transmitting contact leading to similar health outcomes would go badly astray. In the end, there are no universal meanings we can attribute to the geographic or temporal distances between events, and the formalisms we use to represent them are only as good as our ability to understand the social, environmental and historical context of the places we are looking at.</p>
-<section id="spatial" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="spatial"><span class="header-section-number">7.1</span> Spatial</h2>
-<p>Please read the following two pieces that discuss key ideas about geospatial relatedness:</p>
-<p>Miller HJ. Tobler’s First Law and Spatial Analysis. <em>Annals of the Association of American Geographers</em>. 2004;94(2):284-289. doi:<a href="https://doi.org/10.1111/j.1467-8306.2004.09402005.x">10.1111/j.1467-8306.2004.09402005.x</a></p>
-<p>Goodchild MF. The Validity and Usefulness of Laws in Geographic Information Science and Geography. <em>Annals of the Association of American Geographers</em>. 2004;94(2):300-303. doi:<a href="https://doi.org/10.1111/j.1467-8306.2004.09402008.x">10.1111/j.1467-8306.2004.09402008.x</a></p>
-<section id="physical-space" class="level3">
-<h3 class="anchored" data-anchor-id="physical-space">Physical Space</h3>
-</section>
-<section id="social-space" class="level3">
-<h3 class="anchored" data-anchor-id="social-space">Social Space</h3>
-</section>
-</section>
-<section id="temporal" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="temporal"><span class="header-section-number">7.2</span> Temporal</h2>
-<section id="short-term-correlation-and-fluctuation" class="level3">
-<h3 class="anchored" data-anchor-id="short-term-correlation-and-fluctuation">Short-term correlation and fluctuation</h3>
-</section>
-<section id="time-series" class="level3">
-<h3 class="anchored" data-anchor-id="time-series">Time series</h3>
-</section>
-<section id="history" class="level3">
-<h3 class="anchored" data-anchor-id="history">History</h3>
+
+<p>One way to summarize the key challenge this book is meant to address is to ask and answer questions about how we understand, measure, and intervene on epidemiological systems in which <em>autocorrelation</em> plays a key role. In the analysis of time-series data, autocorrelation arises all the time: Past measures of an individual or location are often more similar to the present measures at that location than values from another place or person. If the time series is reflective of some process, e.g.&nbsp;infectious disease transmission, its autocorrelation reflcts the way its history influences its present state.</p>
+<p>Autocorrelation is also a central concern of spatial analysis: Legendre <span class="citation" data-cites="legendre1993">(<a href="references.html#ref-legendre1993" role="doc-biblioref">Legendre 1993</a>)</span> succinctly defined spatial autocorrelation as “the property of random variables taking values, at pairs of locations a certain distance apart, that are more similar (positive autocorrelation) or less similar (negative autorcorrelation) than expected for <em>randomly asssociated pairs of observations</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>”. In the domain of social network analysis, TFL comes into play when we think about the notion of <em>homophily</em>, i.e.&nbsp;that “birds of a feather flock together” <span class="citation" data-cites="goodreau2009">(<a href="references.html#ref-goodreau2009" role="doc-biblioref">Goodreau, Kitts, and Morris 2009</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Emphasis added</p></div><div id="ref-goodreau2009" class="csl-entry" role="listitem">
+Goodreau, Steven M, James A Kitts, and Martina Morris. 2009. <span>“Birds of a Feather, or Friend of a Friend? <span>Using</span> Exponential Random Graph Models to Investigate Adolescent Social Networks.”</span> <em>Demography</em> 46 (1): 103–25. <a href="https://doi.org/10.1353/dem.0.0045">https://doi.org/10.1353/dem.0.0045</a>.
+</div></div><section id="toblers-first-law" class="level2 page-columns page-full" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="toblers-first-law"><span class="header-section-number">2.1</span> Tobler’s First Law</h2>
+<p>In 1970, the geographer Waldo Tobler coined what is often referred to as Tobler’s first law (TFL), which states that “[e]verything is related to everything else, but near things are more related than distant things” <span class="citation" data-cites="tobler1970">(<a href="references.html#ref-tobler1970" role="doc-biblioref">Tobler 1970</a>)</span>. What Tobler is talking about here is the idea that spatial autocorrelation is ubiquitous in geography. While TFL may sound obvious, Goodchild shows its importance and far-reaching implications through a simple thought ecperiment:</p>
+<div class="no-row-height column-margin column-container"><div id="ref-tobler1970" class="csl-entry" role="listitem">
+Tobler, W. R. 1970. <span>“A <span>Computer Movie Simulating Urban Growth</span> in the <span>Detroit Region</span>.”</span> <em>Economic Geography</em> 46: 234–40. <a href="https://doi.org/10.2307/143141">https://doi.org/10.2307/143141</a>.
+</div></div><div class="page-columns page-full"><blockquote class="blockquote">
+<p>“Perhaps the easiest way to see the validity and value of TFL is through a thought experiment, by trying to imagine a world in which it is not true. In such a world, the full range of conditions could be encountered in every minute portion of the world. Every room, for example, might contain the full observed range of the Earth’s topographic variation, from the bottom of the Marianas Trench to the summit of Mount Everest; and the full range of climatic conditions as well. This is the world of white noise, a world that would be impossible to describe, live in, sense, navigate through, or farm.” <span class="citation" data-cites="goodchild2004">(<a href="references.html#ref-goodchild2004" role="doc-biblioref">Goodchild 2004</a>)</span></p>
+</blockquote><div class="no-row-height column-margin column-container"></div></div>
+<p>The notion of the role of ‘nearness’ and ‘farness’ in shaping the similarity of outcomes is really the heart of a contextual approach to epidemiology. Tobler was speaking specifically about geographic distance when he made this statement. Specifically, he was referring to the way human populations were distributed in space, and observing that their composition and density were spatially related, with nearby neighborhoods more similar to each other than distant ones. Since Tobler wrote, others have generalized TFL to a more generic notion of nearness or farness across different types of space.</p>
+<p>Applying this idea to a broad array relationships is what it means, at least to me, to do relational or contextual epidemiology. Simply put, this is just the idea that events separated by less time are more likely to be similar - on average - than those separated by longer periods of time.</p>
+<section id="what-does-closeness-do" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="what-does-closeness-do">What does closeness <em>do</em>?</h4>
+<p>Miller <span class="citation" data-cites="miller2004">(<a href="references.html#ref-miller2004" role="doc-biblioref">Miller 2004</a>)</span> specifically draws on systems theory to argue that the very simple concept of nearness is enough to explain complex geographic phenomena including natural ecosystems and economies, because it is not the nearness that does the ‘doing’ but that interaction between dynamic components is more likely over short spatial, temporal, or social distances than over longer ones.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-miller2004" class="csl-entry" role="listitem">
+Miller, Harvey J. 2004. <span>“Tobler’s <span>First Law</span> and <span>Spatial Analysis</span>.”</span> <em>Annals of the Association of American Geographers</em> 94 (2): 284–89. <a href="https://doi.org/10.1111/j.1467-8306.2004.09402005.x">https://doi.org/10.1111/j.1467-8306.2004.09402005.x</a>.
+</div></div></section>
+<section id="similarity-is-meaningless-without-variation" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="similarity-is-meaningless-without-variation">Similarity is meaningless without variation</h3>
+<ul>
+<li>No similarity without variability (i.e.&nbsp;the real first law according to Goodchild <span class="citation" data-cites="goodchild2004">(<a href="references.html#ref-goodchild2004" role="doc-biblioref">Goodchild 2004</a>)</span>)</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="ref-goodchild2004" class="csl-entry" role="listitem">
+Goodchild, Michael F. 2004. <span>“The <span>Validity</span> and <span>Usefulness</span> of <span>Laws</span> in <span>Geographic Information Science</span> and <span>Geography</span>.”</span> <em>Annals of the Association of American Geographers</em> 94 (2): 300–303. <a href="https://doi.org/10.1111/j.1467-8306.2004.09402008.x">https://doi.org/10.1111/j.1467-8306.2004.09402008.x</a>.
+</div></div></section>
+<section id="why-negative-autocorrelation-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-negative-autocorrelation-matters">Why negative autocorrelation matters</h3>
 </section>
 </section>
-<section id="networks" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="networks"><span class="header-section-number">7.3</span> Networks</h2>
-<section id="social-stratification-inequality" class="level3">
-<h3 class="anchored" data-anchor-id="social-stratification-inequality">Social Stratification &amp; Inequality</h3>
+<section id="how-does-autocorrelation-manifest-in-the-real-world" class="level2 page-columns page-full" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="how-does-autocorrelation-manifest-in-the-real-world"><span class="header-section-number">2.2</span> How does autocorrelation manifest in the real world?</h2>
+<section id="spatial" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="spatial">Spatial</h3>
+<ol type="1">
+<li><p>Gradients: relatively smooth variability over space, e.g.&nbsp;as a function of elevation in ecological systems <span class="citation" data-cites="legendre1993">(<a href="references.html#ref-legendre1993" role="doc-biblioref">Legendre 1993</a>)</span>. According to Legendre, in a true linear gradient the errors at each location are not autocorrelated with each other.</p></li>
+<li><p>Patchiness: Discreate areas separated by ecological discontinuities or interfaces <span class="citation" data-cites="legendre1993">(<a href="references.html#ref-legendre1993" role="doc-biblioref">Legendre 1993</a>)</span>.</p></li>
+</ol>
+<div class="no-row-height column-margin column-container"><div id="ref-legendre1993" class="csl-entry" role="listitem">
+Legendre, Pierre. 1993. <span>“Spatial <span>Autocorrelation</span>: <span>Trouble</span> or <span>New Paradigm</span>?”</span> <em>Ecology</em> 74 (6): 1659–73. <a href="https://doi.org/10.2307/1939924">https://doi.org/10.2307/1939924</a>.
+</div></div><ul>
+<li><p>Getis <span class="citation" data-cites="getis2010">(<a href="references.html#ref-getis2010" role="doc-biblioref">Getis and Ord 2010</a>)</span> discusses how it can be difficult to disentangle local spatial autocorrelation from global, i.e.&nbsp;when there is global autocorrelation we are likely to also find local, so have to be careful about interpreting.</p></li>
+<li><p>Griffith <span class="citation" data-cites="griffith2023a">(<a href="references.html#ref-griffith2023a" role="doc-biblioref">Griffith 2023</a>)</span> makes the point that positive and negative spatial autocorrelation commonly co-occur, so that it is important to not over-focus on one vs.&nbsp;the other.</p></li>
+<li><p>Also points out that the nature of autocorrelation will be a function of scale. Provides the Snow Cholera data as an example: At small scales, there will be a combination of positive (PSA) and negative spatial autocorrelation (NSA), while at higher levels (e.g.&nbsp;all of london) the prevailing pattern will be PSA due to the relatively small size of the area of the outbreak.</p></li>
+<li><h3 id="temporal" class="anchored">Temporal</h3></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="ref-getis2010" class="csl-entry" role="listitem">
+Getis, Arthur, and J. K. Ord. 2010. <span>“The <span>Analysis</span> of <span>Spatial Association</span> by <span>Use</span> of <span>Distance Statistics</span>.”</span> <em>Geographical Analysis</em> 24 (3): 189–206. <a href="https://doi.org/10.1111/j.1538-4632.1992.tb00261.x">https://doi.org/10.1111/j.1538-4632.1992.tb00261.x</a>.
+</div><div id="ref-griffith2023a" class="csl-entry" role="listitem">
+Griffith, Daniel A. 2023. <span>“Spatial Autocorrelation Mixtures in Geospatial Disease Data: <span>An</span> Important Global Epidemiologic/Public Health Assessment Ingredient?”</span> <em>Transactions in GIS</em> 27 (3): 730–51. <a href="https://doi.org/10.1111/tgis.13042">https://doi.org/10.1111/tgis.13042</a>.
+</div></div></section>
+<section id="social" class="level3">
+<h3 class="anchored" data-anchor-id="social">Social</h3>
+<section id="stratification-inequality" class="level4">
+<h4 class="anchored" data-anchor-id="stratification-inequality">Stratification &amp; Inequality</h4>
 </section>
-<section id="social-networks" class="level3">
-<h3 class="anchored" data-anchor-id="social-networks">Social Networks</h3>
+<section id="networks" class="level4">
+<h4 class="anchored" data-anchor-id="networks">Networks</h4>
 </section>
 </section>
-<section id="references" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+</section>
+<section id="nearness-farness-and-the-problem-of-scale" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="nearness-farness-and-the-problem-of-scale"><span class="header-section-number">2.3</span> Nearness, farness, and the problem of scale</h2>
 
 
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-roberts2009" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Roberts SK. Infectious <span>Fear</span>: <span>Politics</span>, <span>Disease</span>, and the <span>Health Effects</span> of <span>Segregation</span>. <span>University of North Carolina Press</span>; 2009.</div>
-</div>
-<div id="ref-logan2017a" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Logan J. <a href="https://doi.org/10.4054/DemRes.2017.36.57">Racial segregation in postbellum <span>Southern</span> cities: <span>The</span> case of <span>Washington</span>, <span>D</span>.<span>C</span></a>. <em>Demographic Research</em>. 2017;36:1759–1784. </div>
-</div>
-</div>
+
 </section>
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -410,10 +428,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -423,8 +458,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -436,7 +480,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -480,6 +647,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -505,6 +673,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -566,17 +760,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./laws.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Some laws of relational and contextual epidemiology</span></span>
+      <a href="./introduction.html" class="pagination-link" aria-label="Why relational and contextual epidemiology?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why relational and contextual epidemiology?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./segregation/index.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./model.html" class="pagination-link" aria-label="Why model?">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Why model?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
