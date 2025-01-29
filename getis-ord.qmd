@@ -2,6 +2,7 @@
 code-annotations: hover
 execute: 
   warning: false
+  cache: false
 
 format:
   html: 
@@ -92,7 +93,7 @@ overlappingRiskGrid <- function(D, N, alpha = 1, bl_rr = 2.0, center_rr = 2.0) {
 
 ```{r}
 D <- 10 # <1>
-cityData <- overlappingRiskGrid(D, 100, 5, 10, 0.5) # <2>
+cityData <- overlappingRiskGrid(D, 100, 1, 5 , 2) # <2>
 cityDataLong <- cityData %>% # <3>
   pivot_longer(c(rate, numCases)) # <3>
 
@@ -177,6 +178,29 @@ plot(g)
 2. Which values of Gi* in the maps you generate reflect a 'real' cluster (based on the input parameters) and which might be artifacts of random sampling? 
 
 3. Change the way neighbors are calculated from queen to rook's adjacency. What happens? Does this effect seem more pronounced under different input datasets? Why?
+
+## From local to global clustering: Calculating $G^*$
+
+We can caclculate the global version of $G^*$ as a weighted sum of $G_i^*$ values, i.e.:
+
+$$
+G^* = \frac{\sum_{i} x_i G_i^*}{\sum_i x_i}
+$$
+
+This makes it easy to calculate $G^*$ using our pre-computed $G_i^*$ values:
+
+```{r}
+gs <- sum(cityData$numCases*cityData$giStar)/sum(cityData$numCases)
+print(gs)
+```
+
+### Exercises
+
+1. What input values to `overlappingRiskGrid` give you the largest values of $G^*$? Are these similar or different from the values that generate robust *local* clusters? 
+
+2. How about the lowest?
+
+3. Thinking theoretically, what scenario do you think would generate the highest possible value of $G^*$? The lowest? Why?
 
 ## Calculate Getis-Ord Gi* for simulated data using `spdep`
 
